@@ -1,0 +1,221 @@
+.confirmation-page {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.confirmation-page-header {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.confirmation-page-header h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    top: 0;
+}
+
+.confirmation-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+}
+
+.confirmation-container {
+    width: 40%;
+    min-width: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.confirmation-event-item {
+    border: 2px solid #202020;
+    border-radius: 8px;
+    padding: 25px;
+    display: flex;
+    gap: 30px;
+    background-color: #eaeaf8;
+    align-items: flex-start;
+}
+
+.confirmation-event-item img {
+    width: 220px;
+    border-radius: 8px;
+}
+
+.confirmation-event-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.confirmation-event-info-sep {
+    height: 1px;
+    width: 100%;
+    background-color: #202020;
+    margin: 10px 0;
+}
+
+.confirmation-event-name {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.confirmation-event-item h4 {
+    font-size: 21px;
+}
+
+.confirmation-event-item h5 {
+    font-size: 18px;
+}
+
+.confirmation-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.back-button {
+    height: 45px;
+    width: 170px;
+    background-color: #b4e1b7;
+    color: #202020;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.confirmation-button {
+    margin-top: 15px;
+    height: 45px;
+    width: 150px;
+    background-color: #a44848;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.confirmation-button:hover {
+    opacity: 0.85;
+}
+
+.checkout-button:hover {
+    opacity: 0.85;
+}
+
+.empty-confirmation-message {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+.view-events-button {
+    margin-top: 20px;
+    height: 45px;
+    width: 200px;
+    background-color: #202020;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-events-button:hover {
+    opacity: 0.85;
+}
+
+@media (max-width: 992px) {
+    .confirmation-page {
+        margin: 25px auto;
+    }
+
+    .confirmation-wrapper {
+        flex-direction: column-reverse;
+        gap: 30px;
+        max-width: 600px;
+    }
+
+    .confirmation-page-header {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 15px;
+        margin-bottom: 0;
+    }
+
+    .confirmation-page-header h1 {
+        position: relative;
+    }
+
+    .back-button {
+        height: 35px;
+        width: 150px;
+    }
+
+    .confirmation-container {
+        min-width: unset;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .confirmation-event-item {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .confirmation-event-img {
+        width: 100%;
+        max-width: 350px;
+        max-height: 150px;
+        object-fit: cover;
+        display: flex;
+    }
+
+    .confirmation-event-item img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .confirmation-event-info {
+        width: 100%;
+    }
+
+    .confirmation-event-name {
+        font-size: 24px;
+    }
+
+    .confirmation-event-item h4 {
+        font-size: 16px;
+    }
+
+    .confirmation-event-item h5 {
+        font-size: 16px;
+    }
+
+    .ticket-quantity {
+        margin: 5px 0;
+    }
+}

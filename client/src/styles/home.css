@@ -1,0 +1,369 @@
+.home-page {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.event-container {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.event-item {
+    border: 2px solid #202020;
+    border-radius: 8px;
+    padding: 25px;
+    display: flex;
+    gap: 30px;
+    background-color: #eaeaf8;
+}
+
+.event-img-container {
+    width: 65%;
+}
+
+.event-primary-img-container {
+    display: flex;
+    max-height: 350px;
+    aspect-ratio: 680/350;
+    overflow: hidden;
+}
+
+.event-primary-img {
+    display: flex;
+    object-fit: cover;
+    width: calc(100% - 6px);
+    border: 3px solid #FFFFFF;
+    border-radius: 8px;
+}
+
+.swiper {
+    margin-top: 15px;
+    padding-bottom: 19px !important;
+}
+
+.swiper .swiper-scrollbar {
+    background: #FFFFFF;
+    height: 4px !important;
+    border-radius: 8px;
+    width: 100% !important;
+    left: 0 !important;
+    cursor: pointer;
+}
+
+.swiper .swiper-scrollbar:hover {
+    height: 8px !important;
+}
+
+.swiper .swiper-scrollbar-drag {
+    background: #202020;
+    border-radius: 8px;
+}
+
+.swiper-slide {
+    aspect-ratio: 3 / 2;
+    border: 3px solid #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Hide default buttons */
+.swiper-button-prev,
+.swiper-button-next {
+    display: none !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    svg {
+        display: none !important;
+    }
+}
+
+.swiper-container-wrapper {
+    position: relative;
+}
+
+.custom-prev,
+.custom-next {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+    margin-top: -11px !important;
+    z-index: 10 !important;
+    cursor: pointer !important;
+    width: auto !important;
+    height: 32% !important;
+    aspect-ratio: 1 / 1;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: background 0.2s;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+/* Left and right positioning */
+.custom-prev {
+    left: 2% !important;
+}
+
+.custom-next {
+    right: 2% !important;
+}
+
+.custom-next img {
+    padding-left: 2px;
+    width: 80%;
+    height: auto;
+}
+
+.custom-prev img {
+    padding-right: 2px;
+    width: 80%;
+    height: auto;
+}
+
+.event-alt-img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+}
+
+/* Fade animation for main image */
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+/* Thumbnail overlay effect */
+.thumbnail-wrapper {
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+}
+
+.thumbnail-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.2s ease;
+}
+
+.thumbnail-wrapper:hover::after {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.active-thumb::after {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.event-info-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.event-name {
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.event-info-sep {
+    height: 2px;
+    width: 100%;
+    background-color: #202020;
+    margin: 20px 0;
+}
+
+.event-quantity-container {
+    display: flex;
+    width: fit-content;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 40px;
+    margin-top: 50px;
+}
+
+.event-quantity-button {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    cursor: pointer;
+}
+
+.event-quantity-button img {
+    height: 65%;
+}
+
+.event-quantity {
+    height: 100%;
+    font-size: 21px;
+    font-family: sans-serif;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    border-left: 2px solid #202020;
+    border-right: 2px solid #202020;
+}
+
+.addtocart-button {
+    height: 45px;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 15px;
+    background-color: #202020;
+}
+
+.addtocart-button .body-copy {
+    color: #FFFFFF;
+}
+
+.addtocart-button.added {
+    background-color: #2ecc71;
+    cursor: pointer;
+}
+
+.addtocart-button.added:hover {
+    opacity: 0.85;
+}
+
+.purchased-button {
+    cursor: unset;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.purchased-text {
+    margin-top: 10px;
+    color: #3e7957;
+}
+
+@media (max-width: 768px) {
+    .home-page {
+        margin: 25px auto;
+        gap: 0;
+    }
+
+    .event-container {
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .event-item {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .event-img {
+        width: 100%;
+        max-width: 350px;
+        max-height: 150px;
+        object-fit: cover;
+        display: flex;
+    }
+
+    .event-item img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .event-info {
+        width: 100%;
+    }
+
+    .event-name {
+        font-size: 24px;
+    }
+
+    .event-item h4 {
+        font-size: 16px;
+    }
+
+    .event-item h5 {
+        font-size: 16px;
+    }
+
+    .addtocart-button {
+        width: 130px;
+        height: 35px;
+    }
+
+    .event-info-sep {
+        margin: 10px 0;
+    }
+
+    .event-img-container {
+        width: 100%;
+    }
+
+    .event-primary-img-container {
+        max-height: 250px;
+        width: 100%;
+    }
+
+    .swiper {
+        margin-top: 5px;
+        padding-bottom: 15px !important;
+    }
+
+    .swiper-slide {
+        max-height: 100px;
+    }
+
+    .custom-prev,
+    .custom-next {
+        margin-top: -9px !important;
+    }
+
+    .event-quantity-container {
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    .event-quantity-button {
+        width: 40px;
+    }
+
+    .event-quantity {
+        font-size: 18px;
+        width: 40px;
+    }
+
+    .event-quantity-button img {
+        width: auto !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .event-primary-img-container {
+        max-height: 130px;
+    }
+
+    .swiper-slide {
+        max-height: 55px;
+    }
+}
