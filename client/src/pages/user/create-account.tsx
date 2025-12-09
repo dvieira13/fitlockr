@@ -1,5 +1,6 @@
 // src/pages/auth/CreateAccount.tsx
 import { useState, FormEvent } from "react";
+import { Link } from "react-router-dom";
 import { GoogleLogin, CredentialResponse } from "@react-oauth/google";
 import { jwtDecode } from "jwt-decode";
 import { useNavigate } from "react-router-dom";
@@ -449,14 +450,14 @@ const CreateAccount = () => {
                     </button>
                 </form>
 
-                <a
+                <Link
                     className="auth-form-footer-message"
-                    href="/auth/login"
+                    to="/auth/login"
                     aria-label="Already have an account? Sign in!"
                 >
                     <p className="caption-copy">Already have an account?</p>
                     <p className="caption-copy hyperlink-text">Sign In</p>
-                </a>
+                </Link>
             </div>
         </div>
     );

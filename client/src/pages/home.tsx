@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import "../styles/index.css";
 import "../styles/pages/home.css";
 import closetIcon from "../assets/icons/closet_icon.svg";
@@ -9,8 +9,6 @@ import visualizeIcon from "../assets/icons/visualize_icon.svg";
 
 
 const Home = () => {
-    const navigate = useNavigate();
-
     return (
         <div className="home-page">
             <div className="banner-section">
@@ -19,9 +17,11 @@ const Home = () => {
                     <div className="banner-info-container">
                         <div>
                             <h4>FitLockr is the smarter way to track your wardrobe, plan outfits, and add new pieces.</h4>
-                            <a className="button" href="/auth/create-account" title="Create an Account to Get Started">
+                            <Link
+                                className="button" to="/auth/create-account" aria-label="Create an Account to Get Started"
+                            >
                                 <p className="body-copy bold-text">Start Your Locker<span className="desktop-only"> Now</span></p>
-                            </a>
+                            </Link>
                         </div>
                         <img className="closet-icon mobile-only" src={closetIcon} alt="Closet Icon"></img>
                     </div>
@@ -57,12 +57,14 @@ const Home = () => {
                     <div className="step-tiles-background"></div>
                 </div>
             </div>
-            <a className="cta-section" href="/auth/create-account" title="Create an Account to Get Started">
+            <Link
+                className="cta-section" to="/auth/create-account" aria-label="Create an Account to Get Started"
+            >
                 <p className="h1-copy">Ready to start building your personalized locker?</p>
                 <div className="button">
                     <p className="body-copy bold-text">Get Started Now</p>
                 </div>
-            </a>
+            </Link>
         </div>
     );
 };
