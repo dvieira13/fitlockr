@@ -1,0 +1,269 @@
+/* src/styles/components/listPageShelfContainer.css */
+
+.list-page-shelf-container {
+    background-color: #6E2F3A;
+    border-radius: 12px;
+    padding: 30px 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list-page-shelf-container-header {
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.list-page-shelf-container-header .separator-line {
+    background-color: #FFFFFF;
+}
+
+.shelf-container-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.shelf-container-header-title {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: baseline;
+}
+
+.shelf-container-header-title h3,
+.shelf-container-header-title p {
+    color: #FFFFFF;
+}
+
+.shelf-container-header-title h3 {
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.shelf-container-header-actions {
+    display: flex;
+    gap: 70px;
+}
+
+.shelf-container-header-action-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.shelf-container-header-actions .button {
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px 11px;
+}
+
+.shelf-container-header-actions .button img {
+    height: 14px;
+    margin-bottom: 3px;
+}
+
+.shelf-container-header-actions .button p {
+    color: #FFFFFF;
+    font-size: 16px
+}
+
+.add-items-button {
+    background-color: #E6AA68;
+}
+
+.edit-button {
+    background-color: #7FB069;
+}
+
+.delete-button {
+    background-color: #941414;
+}
+
+.open-shelf-button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.open-shelf-button .open-arrow-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.list-page-shelf-items-wrapper {
+    margin-top: 8px;
+}
+
+.no-items-text {
+    color: #FFFFFF;
+    padding-left: 50px;
+}
+
+.shelf-items-swiper .swiper-wrapper {
+    padding: 2px 50px 20px 50px;
+    align-items: stretch;
+}
+
+.shelf-items-swiper .swiper-wrapper>:last-child {
+    margin-right: 100px !important;
+}
+
+.shelf-items-swiper .swiper-scrollbar {
+    position: relative;
+    width: calc(100% - 100px) !important;
+    height: 10px;
+    border-radius: 999px;
+    background: #F1F1F180;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+.shelf-items-swiper .swiper-scrollbar-drag {
+    background: #000000;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.shelf-item-slide {
+    width: 20%;
+    height: auto !important;
+    align-self: stretch;
+}
+
+/* Slightly smaller cards inside shelves */
+.list-page-shelf-container .item-card {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 992px) {
+    .list-page-shelf-container {
+        padding: 20px 0 30px;
+        gap: 15px;
+    }
+
+    .list-page-shelf-container-header {
+        gap: 10px;
+        padding: 0 30px;
+    }
+
+    .shelf-container-header-inner {
+        align-items: start;
+        gap: 20px;
+    }
+
+    .shelf-container-header-title {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .shelf-container-header-actions {
+        gap: 40px;
+    }
+
+    .shelf-container-header-action-buttons {
+        gap: 10px;
+    }
+
+    .shelf-container-header-actions .button p {
+        display: none;
+    }
+
+    .shelf-items-swiper .swiper-wrapper {
+        padding: 2px 0 20px 30px;
+    }
+
+    .shelf-items-swiper .swiper-scrollbar {
+        width: calc(100% - 60px) !important;
+    }
+
+    .shelf-items-swiper .swiper-wrapper>:last-child {
+        margin-right: 60px !important;
+    }
+
+    .shelf-item-slide {
+        width: 28%;
+    }
+}
+
+@media (max-width: 550px) {
+    .list-page-shelf-container {
+        padding: 20px 0 20px;
+    }
+
+    .list-page-shelf-container-header {
+        padding: 0 12px;
+    }
+
+    .shelf-container-header-actions {
+        gap: 20px;
+    }
+
+    .shelf-container-header-action-buttons {
+        gap: 5px;
+    }
+
+    .shelf-container-header-actions .button {
+        padding: 4px 9px 3px;
+        width: 32px;
+        height: 26px;
+    }
+
+    .shelf-container-header-actions .button img {
+        height: 10px;
+    }
+
+    .open-shelf-button .open-arrow-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .shelf-container-header-title h3 {
+        font-size: 21px;
+    }
+
+    .shelf-container-header-title p {
+        font-size: 8px;
+    }
+
+    .list-page-shelf-items-wrapper {
+        margin-top: 0;
+    }
+
+    .shelf-items-swiper .swiper-wrapper {
+        padding: 2px 0 15px 12px;
+    }
+
+    .shelf-item-slide {
+        width: 44%;
+    }
+
+    .list-page-shelf-container .item-card {
+        aspect-ratio: 245 / 460;
+    }
+
+    .shelf-items-swiper .swiper-wrapper>:last-child {
+        margin-right: 24px !important;
+    }
+
+    .shelf-items-swiper .swiper-scrollbar {
+        width: calc(100% - 24px) !important;
+        height: 8px;
+    }
+}

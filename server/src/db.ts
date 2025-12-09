@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import { createEvents } from "./scripts/createEvents";
 
 const connectDB = async () => {
     try {
@@ -12,12 +11,6 @@ const connectDB = async () => {
 
         await mongoose.connect(uri);
         console.log("MongoDB Atlas connected");
-
-        // Seed courses in the background (non-blocking)
-        if (SEED === "true") {
-            console.log("Seeding events...");
-            createEvents().catch(err => console.error("Seeding error:", err));
-        }
     } catch (err) {
         console.error("MongoDB connection error:", err);
         process.exit(1);

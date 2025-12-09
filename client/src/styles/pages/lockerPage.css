@@ -1,0 +1,25 @@
+.locker-page {
+    width: 100%;
+    max-width: 1800px;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 20px;
+}
+
+.locker-page-content {
+    width: 75%;
+}
+
+@media (max-width: 992px) {
+    .locker-page {
+        flex-direction: column;
+        padding-right: 0;
+        gap: 0;
+    }
+
+    .locker-page-content {
+        width: 100%;
+    }
+}

@@ -1,0 +1,228 @@
+/* src/styles/components/itemCardCarousel.css */
+
+.item-card-carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item-card-carousel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-right: 5vw;
+}
+
+.item-card-carousel-header-left {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.item-card-carousel .carousel-view-all {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.item-card-carousel-actions {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.item-card-carousel-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.item-card-carousel .carousel-arrow-btn {
+    height: 30px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+.item-card-carousel .carousel-arrow-btn img {
+    height: 100%;
+}
+
+.item-card-carousel .carousel-arrow-btn .prev-arrow-icon {
+    rotate: 180deg;
+}
+
+.item-card-carousel .carousel-arrow-btn:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.item-card-carousel-actions .add-button {
+    height: 40px;
+    width: 140px;
+    border-radius: 8px;
+    background-color: #E6AA68;
+}
+
+.item-card-carousel-actions .add-button p {
+    font-size: 16px;
+}
+
+/* Swiper wrapper */
+.item-card-carousel-swiper-wrapper {
+    overflow: hidden;
+    margin-left: -3px;
+}
+
+.item-card-carousel-swiper {
+    overflow: visible;
+}
+
+.item-card-carousel-swiper .swiper-wrapper {
+    padding: 4px 0 9px 3px;
+    align-items: stretch;
+}
+
+.item-card-carousel-swiper .carousel-arrow-btn {
+    overflow: hidden;
+}
+
+.item-card-carousel-slide {
+    width: 22.2% !important;
+    align-self: stretch;
+    height: auto !important;
+}
+
+.item-card-carousel-swiper .swiper-wrapper>:last-child {
+    margin-right: 5vw !important;
+}
+
+.item-card-carousel-slide .item-card {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 245 / 379;
+}
+
+/* Grid mode for pieces */
+.item-card-carousel-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-right: 5vw;
+}
+
+.item-card-carousel .carousel-empty {
+    padding: 10px 2px 0;
+}
+
+@media (max-width: 1230px) {
+    .item-card-carousel-slide {
+        width: 29.8% !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .item-card-carousel-header {
+        padding-right: 0;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+    }
+
+    .item-card-carousel-swiper-wrapper {
+        margin-left: 0;
+    }
+
+    .item-card-carousel-swiper .swiper-wrapper {
+        padding: 4px 0 9px 5vw;
+        align-items: stretch;
+    }
+
+    .item-card-carousel-swiper .swiper-wrapper>:last-child {
+        margin-right: 10vw !important;
+    }
+
+    .item-card-carousel-slide {
+        width: 28.75% !important;
+        height: auto !important;
+        align-self: stretch;
+        display: flex !important;
+    }
+
+    .item-card-carousel-grid {
+        gap: 10px;
+        padding-right: 0;
+        width: 90%;
+        margin: auto;
+    }
+
+    .item-card-carousel-grid .item-card {
+        width: calc(33.3% - 6.5px);
+    }
+
+    .item-card-carousel .carousel-empty {
+        padding: 10px 5vw 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .item-card-carousel {
+        gap: 10px;
+    }
+
+    .item-card-carousel-header-left {
+        gap: 10px;
+    }
+
+    .item-card-carousel .carousel-view-all p {
+        font-size: 10px;
+    }
+
+    .item-card-carousel-actions {
+        gap: 15px;
+    }
+
+    .item-card-carousel-actions .add-button {
+        height: 40px;
+        width: 120px;
+    }
+
+    .item-card-carousel-controls {
+        gap: 12px;
+    }
+
+    .item-card-carousel .carousel-arrow-btn {
+        height: 20px;
+    }
+
+    .item-card-carousel-footer .add-button {
+        width: 90%;
+        height: 40px;
+        margin: -4px auto 0;
+        padding: 0;
+        border-radius: 8px;
+        background-color: #E6AA68;
+    }
+
+    .item-card-carousel-footer .add-button p {
+        font-size: 16px;
+    }
+
+    .carousel-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 550px) {
+    .item-card-carousel-slide {
+        width: 43.1% !important;
+    }
+
+    .item-card-carousel-grid .item-card {
+        width: calc(50% - 5px);
+    }
+}

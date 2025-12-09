@@ -15,7 +15,7 @@ export function logToFile(entry: any) {
         fs.mkdirSync(logsDir, { recursive: true });
     }
 
-    const logFile = path.join(logsDir, `dylTicketsLog-${dateString}.json`);
+    const logFile = path.join(logsDir, `FitLockr-Log-${dateString}.json`);
     const timestamp = date.toISOString();
     const logEntry = { timestamp, ...entry };
 

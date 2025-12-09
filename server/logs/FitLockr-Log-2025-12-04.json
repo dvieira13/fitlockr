@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": "2025-12-04T03:26:06.740Z",
+    "level": "error",
+    "message": "Failed to refresh user",
+    "meta": {}
+  },
+  {
+    "timestamp": "2025-12-04T03:26:06.742Z",
+    "level": "error",
+    "message": "Failed to refresh user",
+    "meta": {}
+  },
+  {
+    "timestamp": "2025-12-04T03:27:43.718Z",
+    "level": "error",
+    "message": "❌ Error during native username login",
+    "meta": {}
+  },
+  {
+    "timestamp": "2025-12-04T19:57:55.318Z",
+    "level": "error",
+    "message": "Failed to refresh user",
+    "meta": {}
+  }
+]

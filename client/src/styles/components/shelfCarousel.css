@@ -1,0 +1,400 @@
+.shelf-carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.shelf-carousel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-right: 5vw;
+}
+
+.shelf-carousel-header-left {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.shelf-carousel .carousel-view-all {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.shelf-carousel-actions {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.shelf-carousel-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.shelf-carousel-controls .add-button {
+    height: 40px;
+    width: 140px;
+    border-radius: 8px;
+    background-color: #E6AA68;
+}
+
+.shelf-carousel .carousel-arrow-btn {
+    height: 30px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+.shelf-carousel .carousel-arrow-btn img {
+    height: 100%;
+}
+
+.shelf-carousel .carousel-arrow-btn .prev-arrow-icon {
+    rotate: 180deg;
+}
+
+.shelf-carousel .carousel-arrow-btn:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+
+/* Swiper wrapper */
+.shelf-carousel-swiper-wrapper {
+    overflow: hidden;
+    margin-left: -3px;
+}
+
+.shelf-carousel-swiper {
+    overflow: visible;
+}
+
+.shelf-carousel-swiper .swiper-wrapper {
+    padding: 0 0 20px;
+    align-items: stretch;
+}
+
+.shelf-carousel-swiper .swiper-scrollbar {
+    position: relative !important;
+    width: calc(100% - 5vw) !important;
+    height: 10px !important;
+    border-radius: 999px;
+    background: #FFFFFF;
+    left: -2.5vw !important;
+    bottom: 0 !important;
+    top: 0 !important;
+    margin: auto;
+}
+
+.shelf-carousel-swiper .swiper-scrollbar-drag {
+    background: #000000;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.shelf-carousel-swiper .swiper-slide {
+    width: 46%;
+    align-self: stretch;
+    height: auto;
+}
+
+.shelf-carousel-swiper .swiper-wrapper>:last-child {
+    margin-right: 5vw;
+}
+
+.shelf-carousel-card {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background-color: #6E2F3A;
+    padding: 25px;
+}
+
+.shelf-card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shelf-card-title {
+    color: #FFFFFF;
+}
+
+.shelf-card-title .shelf-name {
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 20px;
+}
+
+.shelf-carousel-card .separator-line {
+    background-color: #FFFFFF;
+    margin: 15px 0 25px;
+}
+
+.shelf-card-actions {
+    display: flex;
+    gap: 30px;
+}
+
+.shelf-card-actions .open-shelf-button {
+    height: fit-content;
+}
+
+.shelf-card-action-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.shelf-card-action-buttons .button {
+    height: 32px;
+    border-radius: 8px;
+    gap: 5px;
+    padding: 0 13px;
+}
+
+.shelf-card-action-buttons .button img {
+    height: 11px;
+    margin-bottom: 2px;
+}
+
+.shelf-card-action-buttons .button p {
+    font-size: 14px;
+    color: #FFFFFF;
+    display: none;
+}
+
+.shelf-card-action-buttons .button:hover p {
+    display: block;
+}
+
+.shelf-card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+}
+
+.shelf-card-grid .shelf-grid-tile {
+    width: calc(25% - 8.3px);
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    aspect-ratio: 1;
+    height: 100%;
+}
+
+.shelf-card-grid .shelf-grid-tile .shelf-img-container {
+    height: 100%;
+}
+
+.shelf-card-grid .shelf-grid-tile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.shelf-grid-tile.shelf-grid-tile-more {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shelf-grid-tile.shelf-grid-tile-more h4 {
+    color: #FFFFFF;
+}
+
+.shelf-grid-tile .item-card-img-container.outfits-mode {
+    height: 100%;
+}
+
+.shelf-carousel .carousel-empty {
+    padding: 10px 2px 0;
+}
+
+.shelf-empty-text {
+    color: #FFFFFF;
+}
+
+@media (max-width: 1230px) {
+    .shelf-card-action-buttons.desktop-only {
+        display: none !important;
+    }
+
+    .shelf-card-action-buttons.mobile-only {
+        display: flex !important;
+    }
+
+    .shelf-card-action-buttons {
+        margin: 20px 0 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .shelf-card-action-buttons .button p {
+        display: block;
+    }
+}
+
+@media (max-width: 992px) {
+    .shelf-carousel-header {
+        padding-right: 0;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+    }
+
+    .shelf-card-action-buttons {
+        gap: 10px;
+    }
+
+    .shelf-card-action-buttons .button {
+        height: 35px;
+        gap: 5px;
+        padding: 0 10px;
+    }
+
+    .shelf-card-action-buttons .button img {
+        height: 11px;
+    }
+
+    .shelf-card-action-buttons .button p {
+        font-size: 12px;
+    }
+
+    .shelf-carousel-swiper .swiper-wrapper {
+        padding: 0 0 20px 5vw;
+    }
+
+    .shelf-carousel-swiper .swiper-wrapper>:last-child {
+        margin-right: 10vw;
+    }
+
+    .shelf-carousel-swiper .swiper-slide {
+        width: 66.5%;
+        min-width: 250px;
+    }
+
+    .shelf-carousel-swiper .swiper-scrollbar {
+        width: calc(100% - 10vw) !important;
+        left: 0 !important;
+    }
+
+    .shelf-carousel .carousel-empty {
+        padding: 10px 5vw 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .shelf-carousel {
+        gap: 10px;
+    }
+
+    .shelf-carousel-header-left {
+        gap: 10px;
+    }
+
+    .shelf-carousel .carousel-view-all p {
+        font-size: 10px;
+    }
+
+    .shelf-carousel-actions {
+        gap: 15px;
+    }
+
+    .shelf-carousel-actions .add-button {
+        height: 40px;
+        width: 120px;
+    }
+
+    .shelf-carousel-controls {
+        gap: 12px;
+    }
+
+    .shelf-card-actions .open-shelf-button .open-arrow-icon {
+        height: 24px;
+        width: 24px;
+    }
+
+    .carousel-title {
+        font-size: 24px;
+    }
+
+    .shelf-carousel-card {
+        padding: 15px 20px 20px;
+    }
+
+    .shelf-carousel-card .separator-line {
+        margin: 10px 0 15px;
+    }
+
+    .shelf-card-grid {
+        gap: 10px;
+    }
+
+    .shelf-card-grid .shelf-grid-tile {
+        padding: 10px;
+        width: calc(25% - 7.5px);
+    }
+
+    .shelf-card-title .shelf-name {
+        font-size: 21px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .shelf-carousel-card {
+        padding: 12px 15px 15px;
+    }
+
+    .shelf-card-title .shelf-name {
+        font-size: 18px;
+    }
+
+    .shelf-carousel-card .separator-line {
+        margin: 5px 0 10px;
+    }
+
+    .shelf-card-actions .open-shelf-button .open-arrow-icon {
+        height: 16px;
+        width: 16px;
+    }
+
+    .shelf-card-grid {
+        gap: 5px;
+    }
+
+    .shelf-card-grid .shelf-grid-tile {
+        padding: 5px;
+        width: calc(25% - 3.8px);
+    }
+
+    .shelf-card-action-buttons {
+        margin: 15px 0 0;
+        gap: 5px;
+    }
+
+    .shelf-card-action-buttons .button {
+        height: 25px;
+        gap: 4px;
+        padding: 0 8px;
+    }
+
+    .shelf-card-action-buttons .button img {
+        height: 9px;
+    }
+
+    .shelf-card-action-buttons .button p {
+        font-size: 10px;
+    }
+}

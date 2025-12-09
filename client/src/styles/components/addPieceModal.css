@@ -1,0 +1,107 @@
+.add-piece-modal {
+    padding: 0 0 45px;
+    height: fit-content;
+    width: 500px;
+}
+
+.add-piece-modal .modal-content {
+    width: 400px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-piece-modal .modal-content>:first-child {
+    margin: 0 auto 20px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.add-piece-modal .take-picture-button,
+.add-piece-modal .upload-image-button {
+    height: 40px;
+    width: 150px;
+    background-color: #ECE4B7;
+}
+
+.add-piece-modal .modal-or-text {
+    margin: 10px auto;
+    font-size: 14px;
+}
+
+.add-piece-modal .paste-url-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.add-piece-modal .paste-url-container>:first-child {
+    text-align: center;
+}
+
+.add-piece-modal .paste-url-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.add-piece-modal .url-input {
+    width: calc(100% - 20px);
+}
+
+.add-piece-modal .url-input::placeholder {
+    color: #D8D8D8;
+}
+
+.add-piece-modal .submit-url-button {
+    height: 40px;
+    width: 150px;
+    background-color: #7FB069;
+}
+
+@media (max-width: 768px) {
+    .add-piece-modal {
+        width: 90%;
+        padding: 0 0 25px;
+    }
+
+    .add-piece-modal .modal-content {
+        width: 100%;
+        padding: 0 20px;
+        margin: 20px auto 0;
+    }
+
+    .add-piece-modal .modal-content>:first-child {
+        max-width: 180px;
+    }
+
+    .add-piece-modal .take-picture-button,
+    .add-piece-modal .upload-image-button {
+        height: 35px;
+        width: 130px;
+    }
+
+    .add-piece-modal .modal-or-text {
+        margin: 8px auto;
+        font-size: 10px;
+    }
+
+    .add-piece-modal .paste-url-container {
+        gap: 5px;
+    }
+
+    .add-piece-modal .url-input {
+        font-size: 14px;
+        padding: 10px 10px;
+        max-width: 380px;
+    }
+
+    .add-piece-modal .submit-url-button {
+        height: 35px;
+        width: 130px;
+    }
+}

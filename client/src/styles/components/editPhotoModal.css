@@ -1,0 +1,164 @@
+.edit-photo-modal {
+    width: 500px;
+    height: 385px;
+    padding: 45px 0 35px;
+}
+
+.edit-photo-modal p {
+    text-align: center;
+}
+
+.edit-photo-modal .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: auto;
+}
+
+.edit-photo-modal .modal-account-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    display: flex;
+}
+
+.edit-photo-modal .view-photo-buttons,
+.edit-photo-modal .change-photo-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.edit-photo-modal .edit-photo-button {
+    width: 150px;
+    height: 40px;
+    background-color: #E6AA68;
+}
+
+.edit-photo-modal .change-photo-button {
+    width: 150px;
+    height: 40px;
+    background-color: #7FB069;
+}
+
+.edit-photo-modal .change-photo-buttons .button {
+    width: 150px;
+    height: 40px;
+    background-color: #ECE4B7;
+}
+
+.edit-photo-modal .back-button {
+    font-size: 14px;
+}
+
+/*CROPPER TOOL*/
+.cropper-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: -15px;
+}
+
+.cropper-inner-circle {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #000;
+}
+
+.cropper-inner-circle .reactEasyCrop_Contain {
+    width: 100%;
+    height: 100%;
+}
+
+.cropper-inner-circle .reactEasyCrop_CropArea {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.cropper-zoom-slider {
+    width: 180px;
+    padding: 10px;
+    margin: 0;
+}
+
+.edit-photo-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.edit-photo-actions-container {
+    display: flex;
+    gap: 15px;
+}
+
+.save-crop-button {
+    width: 150px;
+    height: 40px;
+    background-color: #7FB069;
+}
+
+.revert-crop-button {
+    width: 150px;
+    height: 40px;
+    background-color: #ECE4B7;
+}
+
+/*CROPPER TOOL*/
+
+
+@media (max-width: 768px) {
+    .edit-photo-modal {
+        width: 90%;
+        max-width: 500px;
+        padding: 30px 5% 35px;
+        height: fit-content;
+    }
+
+    .edit-photo-modal .modal-account-img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .edit-photo-modal .modal-content {
+        gap: 20px;
+    }
+
+    .edit-photo-modal .view-photo-buttons,
+    .edit-photo-modal .change-photo-buttons {
+        gap: 15px;
+    }
+
+    .edit-photo-modal .view-photo-buttons .button,
+    .edit-photo-modal .change-photo-buttons .button {
+        height: 35px;
+        width: 140px;
+    }
+
+    .cropper-wrapper {
+        margin-top: 0px;
+    }
+
+    .cropper-zoom-slider {
+        width: 150px;
+    }
+
+    .cropper-inner-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .revert-crop-button,
+    .save-crop-button {
+        width: 130px;
+        height: 35px;
+    }
+}

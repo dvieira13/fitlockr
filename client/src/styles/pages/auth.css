@@ -1,0 +1,113 @@
+.auth-container {
+    width: 650px;
+    margin: 70px auto 100px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 60px 125px;
+}
+
+.auth-container-header h2 {
+    text-align: center;
+}
+
+.auth-container-header .caption-copy {
+    color: #6E2F3A;
+    text-align: center;
+    margin: 5px 0 0;
+}
+
+.auth-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 45px 0 0;
+    gap: 20px;
+}
+
+.auth-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auth-form .auth-form-row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.auth-form .auth-form-row .input-label {
+    width: calc(50% - 10px);
+}
+
+.auth-form input {
+    padding: 13px 15px;
+}
+
+.auth-button,
+.create-account-button {
+    background-color: #ECE4B7;
+    height: 50px;
+    width: 100%;
+}
+
+.auth-form-footer-message {
+    display: flex;
+    gap: 5px;
+}
+
+.auth-form-footer-message p {
+    font-size: 15px;
+}
+
+.auth-form-footer-message>:first-child {
+    color: #6E2F3A;
+}
+
+.auth-form-footer-message>:last-child {
+    font-weight: 600;
+}
+
+.google-login-wrapper {
+    width: 400px;
+    margin: 0 auto;
+    /* center on desktop */
+}
+
+@media (max-width: 768px) {
+    .auth-container {
+        margin: 40px auto;
+        width: 90%;
+        max-width: 650px;
+        padding: 40px 5%;
+    }
+
+    .auth-inner {
+        max-width: 400px;
+        margin: auto;
+        margin: 30px auto 0;
+    }
+
+    .google-login-wrapper {
+        width: 100% !important;
+    }
+
+    /* Force iframe to stretch */
+    .google-login-wrapper>div,
+    .google-login-wrapper iframe {
+        width: 100% !important;
+    }
+
+    .auth-form {
+        gap: 10px;
+    }
+
+    .auth-form .auth-form-row {
+        gap: 10px;
+    }
+
+    .auth-form-footer-message p {
+        font-size: 12px;
+    }
+}

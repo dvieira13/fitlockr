@@ -1,0 +1,27 @@
+.shelves-page {
+    width: 90%;
+    padding: 0;
+    margin: auto;
+}
+
+.shelves-page .locker-page-content {
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .shelves-page {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .shelves-page .list-page-actions {
+        margin: 15px auto 20px;
+        flex-direction: row;
+    }
+
+    .shelves-page .list-page-filter-actions {
+        max-width: unset;
+        width: fit-content;
+    }
+}

@@ -1,0 +1,141 @@
+.locker-main-page {
+    padding-right: 0;
+}
+
+.locker-main-page .locker-page-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin: 0 0 100px;
+    width: 75%;
+}
+
+.locker-main-page .locker-page-header {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+    padding-right: 5vw;
+}
+
+.locker-main-page .locker-page-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.locker-main-page .locker-page-header-user {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.locker-main-page .locker-page-user-img-container {
+    min-width: 80px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background-color: #D8D8D8;
+    overflow: hidden;
+}
+
+.locker-main-page .locker-page-user-img {
+    height: 100%;
+}
+
+.locker-main-page .locker-page-header-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.locker-main-page .locker-page-header-actions button {
+    width: 170px;
+    height: 50px;
+    background-color: #E6AA68;
+}
+
+.locker-main-page .locker-page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 100%;
+    margin: 0 0 100px;
+}
+
+@media (max-width: 1230px) {
+    .locker-main-page .locker-page-inner {
+        gap: 40px;
+    }
+
+    .locker-main-page .locker-page-content {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .locker-main-page .locker-page-inner {
+        width: 100%;
+        gap: 50px;
+    }
+
+    .locker-main-page .locker-page-header {
+        padding-right: 0;
+        width: 90%;
+        margin: 20px auto 0;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .locker-main-page .locker-page-inner {
+        width: 100%;
+        gap: 40px;
+    }
+
+    .locker-main-page .locker-page-header {
+        padding-right: 0;
+        width: 90%;
+        margin: 20px auto 0;
+        gap: 15px;
+    }
+
+    .locker-main-page .locker-page-header-inner {
+        gap: 15px;
+        align-items: start;
+    }
+
+    .locker-main-page .locker-page-header-user {
+        gap: 10px;
+    }
+
+    .locker-main-page .locker-page-user-img-container {
+        min-width: 65px;
+        width: 65px;
+        height: 65px;
+    }
+
+    .locker-main-page .locker-page-header-user .locker-page-title {
+        font-size: 24px;
+    }
+
+    .locker-main-page .locker-page-header-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .locker-main-page .locker-page-header-actions button {
+        width: 100px;
+        height: 30px;
+    }
+
+    .locker-main-page .locker-page-header-actions button p {
+        font-size: 12px;
+    }
+
+    .locker-main-page .locker-page-content {
+        gap: 60px;
+        margin: 0 0 80px;
+    }
+}

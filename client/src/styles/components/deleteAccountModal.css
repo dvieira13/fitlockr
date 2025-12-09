@@ -1,0 +1,50 @@
+.delete-account-modal {
+    width: 500px;
+    height: fit-content;
+    padding: 70px 0 35px;
+}
+
+.delete-account-modal p {
+    text-align: center;
+}
+
+.delete-account-modal .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px;
+    margin: auto;
+}
+
+.delete-account-modal .modal-content>:first-child {
+    margin-bottom: 5px;
+}
+
+.delete-account-modal .cancel-button {
+    width: 150px;
+    height: 40px;
+    margin: 25px auto 20px;
+    background-color: #ECE4B7;
+}
+
+.delete-account-modal .delete-button {
+    font-size: 14px;
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .delete-account-modal {
+        width: 90%;
+        max-width: 500px;
+        padding: 50px 5% 30px;
+    }
+
+    .delete-account-modal .cancel-button {
+        height: 35px;
+        width: 120px;
+    }
+
+    .delete-account-modal .delete-button {
+        font-size: 12px;
+    }
+}

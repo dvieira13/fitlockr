@@ -1,0 +1,172 @@
+.nav-wrapper {
+    padding: 30px 0;
+    background-color: #FFFFFF;
+}
+
+.nav-inner {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth-link {
+    background-color: #6E2F3A;
+    height: 40px;
+    width: 150px;
+    gap: 15px;
+}
+
+.auth-link img {
+    height: 18px;
+}
+
+.auth-link p {
+    color: #FFFFFF;
+}
+
+.active-auth-link {
+    background-color: #ECE4B7;
+}
+
+.active-auth-link p {
+    color: #202020;
+}
+
+.active-auth-link p {
+    color: #000;
+}
+
+.home-link {
+    display: flex;
+    width: 127px;
+}
+
+.home-link img {
+    width: 100%;
+}
+
+.nav-links-container {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links {
+    height: 40px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links>:first-child {
+    padding-left: 12px;
+}
+
+.nav-links>:last-child {
+    padding-right: 12px;
+}
+
+.nav-link {
+    padding: 0 12px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link:hover {
+    background-color: #F1F1F1;
+}
+
+.active-nav-link {
+    background-color: #ECE4B7 !important;
+}
+
+.nav-link-divider {
+    background-color: #000;
+    width: 1px;
+    height: 22px;
+}
+
+.mobile-menu-button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-wrapper {
+        padding: 0;
+    }
+
+    .nav-inner {
+        flex-direction: column;
+    }
+
+    .nav-top {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        height: 65px;
+        position: relative;
+    }
+
+    .home-link {
+        width: 100px;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .mobile-nav-menu-button {
+        padding: 0;
+        background-color: transparent;
+        width: 18px;
+    }
+
+    .menu-icon {
+        width: 100%;
+    }
+
+    .auth-link {
+        height: 35px;
+        padding: 0 15px;
+        width: 120px;
+        gap: 10px;
+    }
+
+    .nav-links-container {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0 15px;
+    }
+
+    .nav-links-container.open {
+        display: flex;
+    }
+
+    .nav-links {
+        height: 34px;
+        border-radius: 8px;
+    }
+
+    .nav-links>:first-child {
+        padding-left: 10px;
+    }
+
+    .nav-links>:last-child {
+        padding-right: 10px;
+    }
+
+    .nav-link {
+        padding: 0 10px;
+    }
+
+    .auth-link p {
+        font-size: 14px;
+    }
+}

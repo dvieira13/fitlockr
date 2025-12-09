@@ -1,0 +1,43 @@
+/* src/styles/components/listPageShelfLayout.css */
+
+.list-page-shelf-layout {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.list-page-shelf-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-page-shelf-container-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 992px) {
+    .list-page-shelf-layout {
+        width: 90%;
+        margin: auto;
+        gap: 20px;
+    }
+
+    .list-page-shelf-header {
+        gap: 5px;
+    }
+
+    .list-page-shelf-header p {
+        font-size: 12px;
+    }
+
+    .list-page-shelf-container-wrapper {
+        gap: 30px;
+        margin-bottom: 80px;
+    }
+}

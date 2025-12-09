@@ -1,0 +1,377 @@
+/* src/styles/components/viewOutfitModal.css */
+
+.view-outfit-modal {
+    width: 700px;
+    height: fit-content;
+    padding: 0 0 30px;
+}
+
+.view-outfit-modal .modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 25px 0;
+}
+
+.view-outfit-modal .modal-header {
+    padding: 25px 80px 0 0;
+}
+
+.view-outfit-modal .outfit-content-top {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.view-outfit-modal .primary-img-container {
+    width: 250px;
+    height: 280px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+.view-outfit-modal .primary-img-container:hover .expand-icon {
+    display: flex;
+}
+
+.view-outfit-modal .primary-img-container .expand-icon {
+    position: absolute;
+    width: 12px;
+    top: 10px;
+    right: 9px;
+    display: none;
+}
+
+.view-outfit-modal .outfit-primary-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    object-fit: contain;
+}
+
+/* Only tags live in info container */
+.view-outfit-modal .outfit-info-container {
+    width: calc(100% - 270px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.view-outfit-modal .outfit-info-container.no-tags {
+    justify-content: end;
+}
+
+.view-outfit-modal .outfit-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding-right: 100px;
+}
+
+.view-outfit-modal .tag-item {
+    width: 80px;
+    height: 25px;
+    border-radius: 50px;
+    color: #FFFFFF;
+    background-color: #6E2F3A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-outfit-modal .tag-item p {
+    font-size: 12px;
+}
+
+/* RIGHT overlay actions */
+.view-outfit-modal .view-outfit-overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+    top: 0;
+    right: 0;
+}
+
+.view-outfit-modal .view-outfit-overlay .button {
+    height: 40px;
+    width: 88px;
+    gap: 10px;
+}
+
+.view-outfit-modal .edit-button {
+    background-color: #7FB069;
+    color: #FFFFFF;
+}
+
+.view-outfit-modal .view-outfit-overlay .button img {
+    height: 14px;
+}
+
+/* SWIPER: outfit pieces */
+.view-outfit-modal .outfit-pieces-swiper-container {
+    margin: 0 -2px 0 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.view-outfit-modal .outfit-pieces-swiper-container p {
+    margin: 0 0 3px;
+}
+
+.view-outfit-modal .outfit-pieces-swiper {
+    overflow: visible;
+}
+
+.view-outfit-modal .swiper-wrapper {
+    padding: 2px 0 15px 2px;
+}
+
+.view-outfit-modal .swiper-wrapper> :last-child {
+    margin-right: 12px !important;
+}
+
+.view-outfit-modal .swiper-scrollbar {
+    position: relative;
+    width: 100% !important;
+    height: 10px;
+    border-radius: 999px;
+    background: #D8D8D8;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: 0;
+}
+
+.view-outfit-modal .swiper-scrollbar-drag {
+    background: #000000;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.view-outfit-modal .outfit-piece-swiper-slide {
+    width: 120px;
+    height: 130px;
+    padding: 5px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.view-outfit-modal .outfit-piece-thumb-button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 0;
+    cursor: pointer;
+}
+
+.view-outfit-modal .outfit-piece-thumb {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    object-fit: contain;
+}
+
+
+/*PRIMARY IMG STYLES*/
+
+/* 3-row stack inside the card */
+.view-outfit-modal .outfit-img-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+}
+
+/* Each row */
+.view-outfit-modal .outfit-img-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+}
+
+/* Individual piece images */
+.view-outfit-modal .outfit-piece-img {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* If 2 images in a row (top+outerwear, bottom+footwear),
+   they should sit side-by-side */
+.view-outfit-modal .outfit-row-upper .outfit-piece-img,
+.view-outfit-modal .outfit-row-lower .outfit-piece-img {
+    flex: 1 1 0;
+}
+
+.view-outfit-modal .primary-img-container.outfits-mode.headwear-only .outfit-row-headwear {
+    flex: 1 1 100%;
+}
+
+.view-outfit-modal .primary-img-container.outfits-mode.headwear-only .outfit-row-upper,
+.view-outfit-modal .primary-img-container.outfits-mode.headwear-only .outfit-row-lower {
+    flex: 0 0 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.view-outfit-modal .primary-img-container.outfits-mode.headwear-plus-row-upper .outfit-row-headwear {
+    flex: 0.55 1 0;
+}
+
+.view-outfit-modal .primary-img-container.outfits-mode.headwear-plus-row-upper .outfit-row-upper {
+    flex: 0.45 1 0;
+}
+
+.view-outfit-modal .primary-img-container.outfits-mode.headwear-plus-row-upper .outfit-row-lower {
+    flex: 0 0 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.view-outfit-modal .primary-img-container.outfits-mode.headwear-plus-row-lower .outfit-row-headwear {
+    flex: 0.55 1 0;
+}
+
+.view-outfit-modal .primary-img-container.outfits-mode.headwear-plus-row-lower .outfit-row-lower {
+    flex: 0.45 1 0;
+}
+
+.view-outfit-modal .primary-img-container.outfits-mode.headwear-plus-row-lower .outfit-row-upper {
+    flex: 0 0 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.view-outfit-modal .primary-img-container.outfits-mode.row-upper-only .outfit-row-upper {
+    flex: 1 1 100%;
+}
+
+.view-outfit-modal .primary-img-container.outfits-mode.row-upper-only .outfit-row-headwear,
+.view-outfit-modal .primary-img-container.outfits-mode.row-upper-only .outfit-row-lower {
+    flex: 0 0 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.view-outfit-modal .primary-img-container.outfits-mode.row-lower-only .outfit-row-lower {
+    flex: 1 1 100%;
+}
+
+.view-outfit-modal .primary-img-container.outfits-mode.row-lower-only .outfit-row-headwear,
+.view-outfit-modal .primary-img-container.outfits-mode.row-lower-only .outfit-row-upper {
+    flex: 0 0 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.view-outfit-modal .primary-img-container.outfits-mode.no-headwear .outfit-row-upper {
+    flex: 0.5 1 0;
+}
+
+.view-outfit-modal .primary-img-container.outfits-mode.no-headwear .outfit-row-lower {
+    flex: 0.5 1 0;
+}
+
+.view-outfit-modal .primary-img-container.outfits-mode.no-headwear .outfit-row-headwear {
+    flex: 0 0 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/*FULL VIEW STYLES*/
+
+/* Click affordance */
+.view-outfit-modal .primary-img-container {
+    cursor: zoom-in;
+    position: relative;
+}
+
+/* Full-view zoom overlay */
+.view-outfit-modal .img-zoom-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.view-outfit-modal .img-zoom-inner {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    max-width: 90vw;
+    max-height: 80vh;
+    height: 100%;
+    position: relative;
+}
+
+.view-outfit-modal .img-zoom-main {
+    aspect-ratio: 245 / 355;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-outfit-modal .img-zoom-window {
+    aspect-ratio: 1;
+    height: 50%;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Zoomed grid inside zoom window */
+.view-outfit-modal .zoom-grid {
+    width: 100%;
+    height: 100%;
+    transition: transform-origin 0.05s linear;
+}
+
+.view-outfit-modal .img-zoom-close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.view-outfit-modal .img-zoom-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+
+.view-outfit-modal .collapse-icon {
+    height: 100%;
+}

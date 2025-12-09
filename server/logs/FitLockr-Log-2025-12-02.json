@@ -1,0 +1,408 @@
+[
+  {
+    "timestamp": "2025-12-02T01:53:38.434Z",
+    "level": "info",
+    "message": "✅ Google user data received",
+    "meta": {
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c"
+    }
+  },
+  {
+    "timestamp": "2025-12-02T01:53:38.630Z",
+    "level": "info",
+    "message": "✅ User found in DB",
+    "meta": {
+      "_id": "692dfa4069c656d7f9ca866f",
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "username": "vieiradylan13",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c",
+      "auth_type": "google",
+      "pieces": [],
+      "outfits": [],
+      "shelves": [],
+      "is_deleted": null,
+      "all_items": [],
+      "__v": 0
+    }
+  },
+  {
+    "timestamp": "2025-12-02T01:53:38.715Z",
+    "level": "info",
+    "message": "✅ User fully loaded into context",
+    "meta": {
+      "_id": "692dfa4069c656d7f9ca866f",
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "username": "vieiradylan13",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c",
+      "auth_type": "google",
+      "pieces": [],
+      "outfits": [],
+      "shelves": [],
+      "is_deleted": null,
+      "all_items": [],
+      "__v": 0
+    }
+  },
+  {
+    "timestamp": "2025-12-02T01:59:23.846Z",
+    "level": "error",
+    "message": "❌ Error during native username login",
+    "meta": {}
+  },
+  {
+    "timestamp": "2025-12-02T02:36:10.421Z",
+    "level": "info",
+    "message": "✅ Google user data received",
+    "meta": {
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c"
+    }
+  },
+  {
+    "timestamp": "2025-12-02T02:36:10.553Z",
+    "level": "info",
+    "message": "✅ User found in DB",
+    "meta": {
+      "_id": "692dfa4069c656d7f9ca866f",
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "username": "vieiradylan13",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c",
+      "auth_type": "google",
+      "pieces": [],
+      "outfits": [],
+      "shelves": [],
+      "is_deleted": null,
+      "all_items": [],
+      "__v": 0
+    }
+  },
+  {
+    "timestamp": "2025-12-02T02:36:10.609Z",
+    "level": "info",
+    "message": "✅ User fully loaded into context",
+    "meta": {
+      "_id": "692dfa4069c656d7f9ca866f",
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "username": "vieiradylan13",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c",
+      "auth_type": "google",
+      "pieces": [],
+      "outfits": [],
+      "shelves": [],
+      "is_deleted": null,
+      "all_items": [],
+      "__v": 0
+    }
+  },
+  {
+    "timestamp": "2025-12-02T02:43:59.242Z",
+    "level": "info",
+    "message": "✅ Google user data received",
+    "meta": {
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c"
+    }
+  },
+  {
+    "timestamp": "2025-12-02T02:43:59.318Z",
+    "level": "info",
+    "message": "✅ User found in DB",
+    "meta": {
+      "_id": "692dfa4069c656d7f9ca866f",
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "username": "vieiradylan13",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c",
+      "auth_type": "google",
+      "pieces": [],
+      "outfits": [],
+      "shelves": [],
+      "is_deleted": null,
+      "all_items": [],
+      "__v": 0
+    }
+  },
+  {
+    "timestamp": "2025-12-02T02:43:59.415Z",
+    "level": "info",
+    "message": "✅ User fully loaded into context",
+    "meta": {
+      "_id": "692dfa4069c656d7f9ca866f",
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "username": "vieiradylan13",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c",
+      "auth_type": "google",
+      "pieces": [],
+      "outfits": [],
+      "shelves": [],
+      "is_deleted": null,
+      "all_items": [],
+      "__v": 0
+    }
+  },
+  {
+    "timestamp": "2025-12-02T03:04:14.359Z",
+    "level": "info",
+    "message": "✅ Google user data received",
+    "meta": {
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c"
+    }
+  },
+  {
+    "timestamp": "2025-12-02T03:04:14.433Z",
+    "level": "info",
+    "message": "✅ User found in DB",
+    "meta": {
+      "_id": "692dfa4069c656d7f9ca866f",
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "username": "vieiradylan13",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c",
+      "auth_type": "google",
+      "pieces": [],
+      "outfits": [],
+      "shelves": [],
+      "is_deleted": null,
+      "all_items": [],
+      "__v": 0
+    }
+  },
+  {
+    "timestamp": "2025-12-02T03:04:14.518Z",
+    "level": "info",
+    "message": "✅ User fully loaded into context",
+    "meta": {
+      "_id": "692dfa4069c656d7f9ca866f",
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "username": "vieiradylan13",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c",
+      "auth_type": "google",
+      "pieces": [],
+      "outfits": [],
+      "shelves": [],
+      "is_deleted": null,
+      "all_items": [],
+      "__v": 0
+    }
+  },
+  {
+    "timestamp": "2025-12-02T04:03:25.711Z",
+    "level": "info",
+    "message": "✅ Google user data received",
+    "meta": {
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c"
+    }
+  },
+  {
+    "timestamp": "2025-12-02T04:03:25.831Z",
+    "level": "info",
+    "message": "✅ User found in DB",
+    "meta": {
+      "_id": "692dfa4069c656d7f9ca866f",
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "username": "vieiradylan13",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c",
+      "auth_type": "google",
+      "pieces": [],
+      "outfits": [],
+      "shelves": [],
+      "is_deleted": null,
+      "all_items": [],
+      "__v": 0
+    }
+  },
+  {
+    "timestamp": "2025-12-02T04:03:25.885Z",
+    "level": "info",
+    "message": "✅ User fully loaded into context",
+    "meta": {
+      "_id": "692dfa4069c656d7f9ca866f",
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "username": "vieiradylan13",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c",
+      "auth_type": "google",
+      "pieces": [],
+      "outfits": [],
+      "shelves": [],
+      "is_deleted": null,
+      "all_items": [],
+      "__v": 0
+    }
+  },
+  {
+    "timestamp": "2025-12-02T04:09:26.899Z",
+    "level": "info",
+    "message": "✅ Google user data received",
+    "meta": {
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c"
+    }
+  },
+  {
+    "timestamp": "2025-12-02T04:09:26.949Z",
+    "level": "info",
+    "message": "🆕 User not found, creating new user..."
+  },
+  {
+    "timestamp": "2025-12-02T04:09:27.006Z",
+    "level": "info",
+    "message": "✅ New user created",
+    "meta": {
+      "_id": "692dfa4069c656d7f9ca866f",
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "username": "vieiradylan13",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c",
+      "auth_type": "google",
+      "pieces": [],
+      "outfits": [],
+      "shelves": [],
+      "is_deleted": "2025-12-02T04:09:19.616Z",
+      "all_items": [],
+      "__v": 0
+    }
+  },
+  {
+    "timestamp": "2025-12-02T04:09:27.021Z",
+    "level": "info",
+    "message": "✅ User fully loaded into context",
+    "meta": {
+      "_id": "692dfa4069c656d7f9ca866f",
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "username": "vieiradylan13",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c",
+      "auth_type": "google",
+      "pieces": [],
+      "outfits": [],
+      "shelves": [],
+      "is_deleted": "2025-12-02T04:09:19.616Z",
+      "all_items": [],
+      "__v": 0
+    }
+  },
+  {
+    "timestamp": "2025-12-02T04:14:18.229Z",
+    "level": "info",
+    "message": "✅ Google user data received",
+    "meta": {
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c"
+    }
+  },
+  {
+    "timestamp": "2025-12-02T04:14:18.356Z",
+    "level": "info",
+    "message": "🆕 User not found, creating new user..."
+  },
+  {
+    "timestamp": "2025-12-02T04:14:18.452Z",
+    "level": "info",
+    "message": "✅ New user created",
+    "meta": {
+      "_id": "692dfa4069c656d7f9ca866f",
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "username": "vieiradylan13",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c",
+      "auth_type": "google",
+      "pieces": [],
+      "outfits": [],
+      "shelves": [],
+      "is_deleted": "2025-12-02T04:09:19.616Z",
+      "all_items": [],
+      "__v": 0
+    }
+  },
+  {
+    "timestamp": "2025-12-02T04:14:18.461Z",
+    "level": "info",
+    "message": "✅ User fully loaded into context",
+    "meta": {
+      "_id": "692dfa4069c656d7f9ca866f",
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "username": "vieiradylan13",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c",
+      "auth_type": "google",
+      "pieces": [],
+      "outfits": [],
+      "shelves": [],
+      "is_deleted": "2025-12-02T04:09:19.616Z",
+      "all_items": [],
+      "__v": 0
+    }
+  },
+  {
+    "timestamp": "2025-12-02T15:39:24.266Z",
+    "level": "error",
+    "message": "❌ Error during native username login",
+    "meta": {}
+  },
+  {
+    "timestamp": "2025-12-02T17:32:08.163Z",
+    "level": "error",
+    "message": "Failed to refresh user",
+    "meta": {}
+  }
+]

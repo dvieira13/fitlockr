@@ -1,0 +1,64 @@
+.shelf-page .list-page-actions {
+    margin: 30px 0 15px;
+}
+
+.single-shelf-header-bar {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    gap: 10px
+}
+
+.single-shelf-header-bar .edit-button {
+    height: 40px;
+    width: fit-content;
+    padding: 0 18px;
+    background-color: #7FB069;
+}
+
+.single-shelf-header-bar .delete-button {
+    height: 40px;
+    width: fit-content;
+    padding: 0 18px;
+    background-color: #941414;
+}
+
+.single-shelf-header-bar button p {
+    color: #FFFFFF;
+}
+
+@media (max-width: 992px) {
+    .shelf-page .list-page-actions {
+        margin: 20px auto 25px;
+    }
+
+    .single-shelf-header-bar {
+        width: 90%;
+        margin: 0 auto 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .shelf-page .list-page-actions {
+        margin: -40px auto 20px;
+        gap: 55px;
+    }
+
+    .single-shelf-header-bar {
+        margin: -105px auto 70px;
+    }
+
+    .single-shelf-header-bar .edit-button {
+        height: 35px;
+        padding: 0 10px;
+    }
+
+    .single-shelf-header-bar .delete-button {
+        height: 35px;
+        padding: 0 10px;
+    }
+
+    .single-shelf-header-bar button p {
+        font-size: 12px;
+    }
+}

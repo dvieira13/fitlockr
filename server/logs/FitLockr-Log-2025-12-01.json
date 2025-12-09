@@ -1,0 +1,91 @@
+[
+  {
+    "timestamp": "2025-12-01T20:17:59.125Z",
+    "level": "error",
+    "message": "❌ Error during native create-account flow",
+    "meta": {}
+  },
+  {
+    "timestamp": "2025-12-01T20:27:44.213Z",
+    "level": "info",
+    "message": "✅ Google user data received",
+    "meta": {
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c"
+    }
+  },
+  {
+    "timestamp": "2025-12-01T20:27:44.498Z",
+    "level": "info",
+    "message": "🆕 User not found, creating new user..."
+  },
+  {
+    "timestamp": "2025-12-01T20:27:44.645Z",
+    "level": "info",
+    "message": "✅ New user created",
+    "meta": {
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "username": "vieiradylan13",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c",
+      "auth_type": "google",
+      "pieces": [],
+      "outfits": [],
+      "shelves": [],
+      "is_deleted": null,
+      "_id": "692dfa4069c656d7f9ca866f",
+      "all_items": [],
+      "__v": 0
+    }
+  },
+  {
+    "timestamp": "2025-12-01T20:27:44.663Z",
+    "level": "info",
+    "message": "✅ User fully loaded into context",
+    "meta": {
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "username": "vieiradylan13",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c",
+      "auth_type": "google",
+      "pieces": [],
+      "outfits": [],
+      "shelves": [],
+      "is_deleted": null,
+      "_id": "692dfa4069c656d7f9ca866f",
+      "all_items": [],
+      "__v": 0
+    }
+  },
+  {
+    "timestamp": "2025-12-01T21:03:47.338Z",
+    "level": "error",
+    "message": "❌ Error during native create-account flow",
+    "meta": {}
+  },
+  {
+    "timestamp": "2025-12-01T21:05:28.863Z",
+    "level": "error",
+    "message": "❌ Error during native create-account flow",
+    "meta": {}
+  },
+  {
+    "timestamp": "2025-12-01T23:34:09.148Z",
+    "level": "error",
+    "message": "❌ Error during native username login",
+    "meta": {}
+  },
+  {
+    "timestamp": "2025-12-01T23:34:32.398Z",
+    "level": "error",
+    "message": "❌ Error during native username login",
+    "meta": {}
+  }
+]

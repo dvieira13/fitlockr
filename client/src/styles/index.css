@@ -1,14 +1,18 @@
 body {
-  margin: 0 auto 100px;
+  margin: 0 auto;
   width: 100%;
   max-width: 1800px;
-  font-family: "Georgia", serif;
+  font-family: "Epilogue", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  background-color: #F1F1F1;
 }
 
 a {
   color: unset;
   text-decoration: unset;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 div {
@@ -20,80 +24,116 @@ div {
 }
 
 .bold-text {
-  font-weight: 600 !important;
+  font-weight: 700 !important;
+}
+
+.extrabold-text {
+  font-weight: 800 !important;
+}
+
+.black-text {
+  font-weight: 900 !important;
 }
 
 .error-text {
-  color: rgb(176, 49, 49);
+  color: #941414;
+}
+
+.gradient-text {
+  background-image: linear-gradient(to right, #E6AA68, #D36135, #6E2F3A);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .hyperlink-text {
-  font-weight: 600 !important;
   text-decoration: 1px solid underline #000;
   text-underline-offset: 3px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.separator-line {
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+}
+
+.vertical-separator-line {
+  width: 1px;
+  background-color: #000000;
+  height: auto;
+  align-self: stretch;
 }
 
 .mobile-only {
-  display: none;
+  display: none !important;
 }
 
 @media (max-width: 768px) {
   .desktop-only {
-    display: none;
+    display: none !important;
   }
 
   .mobile-only {
-    display: flex;
+    display: flex !important;
   }
 }
 
 /* FONTS */
 h1 {
   font-size: 37px;
+  line-height: 110%;
   font-weight: 500;
+  margin: 0px;
+}
+
+.h1-copy {
+  font-size: 37px;
   line-height: 120%;
+  font-weight: 500;
   margin: 0px;
 }
 
 h2 {
   font-size: 32px;
-  font-weight: 400;
   line-height: 120%;
+  font-weight: 500;
   margin: 0px;
 }
 
 h3 {
   font-size: 28px;
-  font-weight: 500;
   line-height: 120%;
+  font-weight: 500;
   margin: 0px;
 }
 
 h4 {
   font-size: 24px;
-  font-weight: 500;
   line-height: 120%;
+  font-weight: 500;
   margin: 0px;
 }
 
 h5 {
   font-size: 21px;
-  font-weight: 500;
   line-height: 120%;
+  font-weight: 500;
   margin: 0px;
 }
 
 .body-copy {
   font-size: 18px;
-  font-weight: 400;
   line-height: 120%;
+  font-weight: 500;
   margin: 0px;
 }
 
 .caption-copy {
   font-size: 16px;
-  font-weight: 400;
   line-height: 120%;
+  font-weight: 500;
   margin: 0px;
 }
 
@@ -129,42 +169,340 @@ h5 {
 
 /* FONTS */
 
+/* COLORS */
+.black {
+  background-color: #000000;
+}
+
+.white {
+  background-color: #FFFFFF;
+  box-shadow: inset 0 0 0 1px #000000;
+}
+
+.grey {
+  background-color: #D8D8D8;
+}
+
+.brown {
+  background-color: #7B5428;
+}
+
+.blue {
+  background-color: #3571AD;
+}
+
+.green {
+  background-color: #267F26;
+}
+
+.yellow {
+  background-color: #EAEA83;
+}
+
+.orange {
+  background-color: #F29027;
+}
+
+.tan {
+  background-color: #EED8AC;
+}
+
+.red {
+  background-color: #941414;
+}
+
+.purple {
+  background-color: #8E25B4;
+}
+
+.pink {
+  background-color: #F58FE9;
+}
+
+.multi {
+  background: linear-gradient(135deg,
+      #941414 0%,
+      /* red   */
+      #F29027 20%,
+      /* orange */
+      #EAEA83 40%,
+      /* yellow */
+      #267F26 60%,
+      /* green */
+      #3571AD 80%,
+      /* blue  */
+      #8E25B4 100%
+      /* purple */
+    );
+}
+
+/* COLORS */
+
+.shadow {
+  box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.25);
+}
+
+button {
+  font-family: "Epilogue", sans-serif;
+  font-optical-sizing: auto;
+}
+
 .button {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 0 1px #202020;
-  border-radius: 8px;
-  border: unset;
+  border-radius: 12px;
+  width: fit-content;
   cursor: pointer;
-  font-family: sans-serif;
+  border: unset;
+  font-family: "Epilogue", sans-serif;
 }
 
-.button:hover {
-  box-shadow: 0 0 0 2px #202020;
+.button-disabled {
+  opacity: .5;
+}
+
+.button p {
+  line-height: 100%;
+  white-space: nowrap;
+}
+
+.input-label {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  gap: 5px;
 }
 
 input,
 textarea,
 select {
-  font-family: "Poppins", sans-serif;
-  font-size: 21px;
-  padding: 5px 10px;
+  font-family: "Epilogue", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 10px;
+  border-radius: 12px;
+  border: 0;
+  box-shadow: inset 0 0 0 1px #202020;
+  color: #000000;
+  background-color: #FFFFFF;
 }
 
-.loading-container {
-  width: 100vw;
-  height: 50vh;
+.input-error {
+  box-shadow: inset 0 0 0 2px #941414;
+}
+
+input:focus-visible {
+  box-shadow: inset 0 0 0 2px #202020;
+}
+
+input:focus {
+  box-shadow: inset 0 0 0 2px #202020;
+}
+
+input:disabled {
+  color: #000000;
+}
+
+.input-disabled.dropdown {
+  background-color: #F1F1F1;
+  opacity: 0.3;
+}
+
+.input-inactive input {
+  box-shadow: unset;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  /* For WebKit browsers */
+  appearance: none;
+  /* Standard property */
+  background: transparent;
+  /* Makes the background transparent */
+  cursor: pointer;
+  border: none;
+}
+
+/* WebKit (Chrome, Safari) */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #F1F1F1;
+  /* Example: light gray track */
+  height: 8px;
+  border-radius: 4px;
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-track {
+  background: #F1F1F1;
+  height: 8px;
+  border-radius: 4px;
+}
+
+/* Microsoft Edge/IE */
+input[type="range"]::-ms-track {
+  background: #F1F1F1;
+  height: 8px;
+  border-radius: 4px;
+  border-color: transparent;
+  /* Important for IE/Edge */
+  color: transparent;
+  /* Important for IE/Edge */
+}
+
+/* WebKit (Chrome, Safari) */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #202020;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  /* Makes it round */
+  margin-top: -4px;
+  /* Adjust to center vertically on the track */
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-thumb {
+  background: #202020;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+/* Microsoft Edge/IE */
+input[type="range"]::-ms-thumb {
+  background: #202020;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.dropdown {
+  height: fit-content;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 12px 12px 0 0;
+  box-shadow: inset 0 0 0 1px #202020;
+  position: relative;
+}
+
+.dropdown-separator-line {
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  width: calc(100% - 14%);
+  margin: auto;
+}
+
+.dropdown-top {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.dropdown-top .caption-copy {
+  line-height: 100%;
+}
+
+.dropdown-top .up-arrow-icon {
+  width: 12px;
+  rotate: 180deg;
+}
+
+.dropdown-closed {
+  border-radius: 12px;
+}
+
+.dropdown-closed .dropdown-bottom {
+  display: none !important;
+}
+
+.dropdown-closed .up-arrow-icon {
+  rotate: none;
+}
+
+.dropdown-bottom {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: inset 0 0 0 1px #202020;
+  border-radius: 0 0 12px 12px;
+  z-index: 2;
+  max-height: 250px;
+  overflow: hidden;
+}
+
+.dropdown-bottom-swiper {
+  width: 100%;
+  max-height: 250px;
+}
+
+.dropdown-bottom-swiper .swiper-wrapper {
+  height: auto !important;
+}
+
+.dropdown-bottom-swiper .swiper-slide {
+  height: auto !important;
+  padding: 0 5px 0px 0px !important;
+}
+
+.dropdown-bottom-swiper.swiper-vertical>.swiper-scrollbar {
+  width: 5px;
+  right: 5px;
+  left: auto;
+  top: 0;
+  height: 95%;
+  margin-top: 5px;
+  border-radius: 999px;
+  background: #D8D8D8;
+}
+
+.dropdown-option {
+  cursor: pointer;
+  padding: 8px 7%;
+  display: flex;
+}
+
+.active-dropdown-option p {
+  font-weight: 700;
+}
+
+.dropdown-option-checkbox {
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}
+
+.active-dropdown-option .dropdown-option-checkbox {
+  box-shadow: inset 0 0 0 2px #202020;
 }
 
 @media (max-width: 768px) {
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
   input,
   textarea,
   select {
     font-size: 18px;
     padding: 5px 10px;
+    border-radius: 8px;
+  }
+
+  .dropdown-top .caption-copy {
+    font-size: 12px;
   }
 }

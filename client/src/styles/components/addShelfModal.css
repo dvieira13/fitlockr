@@ -1,0 +1,615 @@
+.add-shelf-modal {
+    padding: 0 0 30px;
+    height: fit-content;
+    max-height: 85%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-shelf-modal .modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* STEP 1 */
+
+.add-shelf-step-1 {
+    width: 400px;
+    margin: 40px auto 0;
+    align-items: center;
+}
+
+.add-shelf-step-1 .step-1-instruction {
+    max-width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.shelf-name-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0 0;
+}
+
+.shelf-name-input {
+    width: calc(100% - 20px);
+}
+
+.shelf-name-input::placeholder {
+    color: #D8D8D8;
+}
+
+.add-shelf-modal .continue-button {
+    height: 40px;
+    width: 180px;
+    background-color: #7fb069;
+}
+
+.add-shelf-modal .modal-or-text {
+    margin: 15px auto;
+    font-size: 14px;
+}
+
+.add-shelf-modal .start-adding-button {
+    height: 40px;
+    width: 220px;
+    background-color: #ECE4B7;
+}
+
+/* STEP 2 */
+
+.add-shelf-container-step-2 {
+    width: 700px;
+    height: 85%;
+}
+
+.add-shelf-step-2 {
+    padding: 15px 20px 0 25px;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.item-picker-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+}
+
+.item-picker-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 0 5px;
+}
+
+.item-picker-header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.item-picker-back-button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.create-shelf-button {
+    height: 40px;
+    padding: 0 25px;
+    background-color: #7fb069;
+}
+
+.item-picker-controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.item-picker-search {
+    flex: 1;
+    position: relative;
+    max-width: 285px;
+}
+
+.item-picker-search-input {
+    width: calc(100% - 54px);
+    height: 36px;
+    border-radius: 12px;
+    padding: 0 40px 0 12px;
+    font-size: 16px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    margin: auto;
+    height: 18px;
+}
+
+.item-picker-sort-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.item-picker-controls .dropdown {
+    min-width: 200px;
+}
+
+.item-picker-controls .dropdown p {
+    font-size: 14px;
+}
+
+.item-picker-controls .dropdown-top {
+    height: 36px;
+    gap: 10px;
+    padding: 0 7%;
+}
+
+.item-picker-controls .dropdown-option {
+    padding: 10px 7%;
+}
+
+.item-picker-controls .dropdown-bottom {
+    top: 35px;
+}
+
+.add-shelf-modal .item-picker-swiper-wrapper {
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.add-shelf-modal .item-picker-grid-swiper {
+    height: 100%;
+}
+
+.add-shelf-modal .item-picker-grid-swiper .swiper-wrapper {
+    height: auto !important;
+}
+
+.add-shelf-modal .swiper-scrollbar {
+    width: 10px;
+    right: 0px;
+    left: auto;
+    top: 0;
+    height: calc(100% - 1px);
+    border-radius: 999px;
+    background: #d8d8d8;
+}
+
+.add-shelf-modal .swiper-scrollbar-drag {
+    background: #000000;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.add-shelf-modal .item-picker-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    padding: 2px 2px 6px 2px;
+}
+
+.add-shelf-modal .item-picker-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.add-shelf-modal .item-picker-card-img-wrapper {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-shelf-modal .item-picker-card-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.add-shelf-modal .item-picker-card-info-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3px;
+    width: 100%;
+}
+
+.add-shelf-modal .item-picker-card-type {
+    font-size: 9px;
+    color: #6E2F3A;
+}
+
+.add-shelf-modal .item-picker-card-name {
+    font-size: 12px;
+    margin: 0;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.add-shelf-modal .item-picker-add-button.piece-added {
+    color: #FFFFFF;
+    background-color: #7FB069;
+}
+
+.add-shelf-modal .item-picker-add-button {
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #f3b15f;
+    margin: 2px 0 0;
+}
+
+.add-shelf-modal .item-picker-add-button p {
+    font-size: 14px;
+}
+
+/*Outfit mode img container*/
+.add-shelf-modal .shelf-picker-outfit-img-wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* keep grid full width inside modal */
+.add-shelf-modal .item-picker-grid-swiper .swiper-slide {
+    padding: 0 20px 0 0px;
+}
+
+/* outfit card image wrapper inside picker */
+.shelf-picker-outfit-img-wrapper {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* error text below grid in step 2 */
+.shelf-step-2-error {
+    margin-top: 8px;
+    text-align: center;
+}
+
+
+/*Outfit img grid styles*/
+
+/* 3-row stack inside the card */
+.outfit-img-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+}
+
+/* Each row */
+.outfit-img-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+}
+
+/* Individual piece images */
+.outfit-piece-img {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* If 2 images in a row (top+outerwear, bottom+footwear),
+   they should sit side-by-side */
+.outfit-row-upper .outfit-piece-img,
+.outfit-row-lower .outfit-piece-img {
+    flex: 1 1 0;
+}
+
+.item-picker-card-img-container.outfits-mode.headwear-only .outfit-row-headwear {
+    flex: 1 1 100%;
+}
+
+.item-picker-card-img-container.outfits-mode.headwear-only .outfit-row-upper,
+.item-picker-card-img-container.outfits-mode.headwear-only .outfit-row-lower {
+    flex: 0 0 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.item-picker-card-img-container.outfits-mode.headwear-plus-row-upper .outfit-row-headwear {
+    flex: 0.55 1 0;
+}
+
+.item-picker-card-img-container.outfits-mode.headwear-plus-row-upper .outfit-row-upper {
+    flex: 0.45 1 0;
+}
+
+.item-picker-card-img-container.outfits-mode.headwear-plus-row-upper .outfit-row-lower {
+    flex: 0 0 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.item-picker-card-img-container.outfits-mode.headwear-plus-row-lower .outfit-row-headwear {
+    flex: 0.55 1 0;
+}
+
+.item-picker-card-img-container.outfits-mode.headwear-plus-row-lower .outfit-row-lower {
+    flex: 0.45 1 0;
+}
+
+.item-picker-card-img-container.outfits-mode.headwear-plus-row-lower .outfit-row-upper {
+    flex: 0 0 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.item-picker-card-img-container.outfits-mode.row-upper-only .outfit-row-upper {
+    flex: 1 1 100%;
+}
+
+.item-picker-card-img-container.outfits-mode.row-upper-only .outfit-row-headwear,
+.item-picker-card-img-container.outfits-mode.row-upper-only .outfit-row-lower {
+    flex: 0 0 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.item-picker-card-img-container.outfits-mode.row-lower-only .outfit-row-lower {
+    flex: 1 1 100%;
+}
+
+.item-picker-card-img-container.outfits-mode.row-lower-only .outfit-row-headwear,
+.item-picker-card-img-container.outfits-mode.row-lower-only .outfit-row-upper {
+    flex: 0 0 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.item-picker-card-img-container.outfits-mode.no-headwear .outfit-row-upper {
+    flex: 0.5 1 0;
+}
+
+.item-picker-card-img-container.outfits-mode.no-headwear .outfit-row-lower {
+    flex: 0.5 1 0;
+}
+
+.item-picker-card-img-container.outfits-mode.no-headwear .outfit-row-headwear {
+    flex: 0 0 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/* UPDATE & EDIT MODES */
+
+.add-shelf-modal.update-mode .create-shelf-button p,
+.add-shelf-modal.edit-mode .create-shelf-button p {
+    /* ensure button label reads as primary action */
+    text-transform: none;
+}
+
+.add-shelf-modal.update-mode .add-items-title,
+.add-shelf-modal.edit-mode .add-items-title {
+    /* minor spacing tweaks if needed */
+    margin-bottom: 0;
+}
+
+.add-shelf-modal.edit-mode .edit-shelf-name-input-wrapper {
+    flex: 1;
+}
+
+.add-shelf-modal.edit-mode .edit-shelf-name-input-wrapper .shelf-name-input {
+    max-width: 350px;
+}
+
+.add-shelf-container-step-2.edit-mode {
+    height: fit-content;
+    width: 500px;
+}
+
+.add-shelf-container-step-2.edit-mode .item-picker-header {
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0 30px;
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .add-shelf-modal {
+        width: 90%;
+        padding: 0 0 25px;
+    }
+
+    .add-shelf-modal .modal-content {
+        width: 100%;
+        padding: 0 20px;
+        margin: 20px auto 0;
+    }
+
+    .add-shelf-step-1 .step-1-instruction {
+        max-width: 180px;
+    }
+
+    .add-shelf-modal .continue-button {
+        height: 35px;
+        width: 130px;
+    }
+
+    .add-shelf-modal .modal-or-text {
+        margin: 8px auto;
+        font-size: 10px;
+    }
+
+    .shelf-name-form {
+        gap: 10px;
+        margin: 15px 0 0;
+    }
+
+    .add-shelf-modal .shelf-name-input {
+        font-size: 14px;
+        padding: 10px 10px;
+        max-width: 380px;
+    }
+
+    .add-shelf-modal .start-adding-button {
+        height: 35px;
+        width: 170px;
+    }
+
+    .add-shelf-container-step-2.edit-mode {
+        width: 90%;
+    }
+
+    .add-shelf-modal.edit-mode .edit-shelf-name-input-wrapper {
+        width: 100%;
+    }
+
+    .add-shelf-modal.edit-mode .edit-shelf-name-input-wrapper .shelf-name-input {
+        width: calc(100% - 20px);
+        max-width: 500px;
+    }
+
+    .add-shelf-container-step-2.edit-mode .item-picker-header {
+        margin: 5px 0 10px;
+        gap: 20px;
+    }
+
+    /*Item Picker styles*/
+
+    .add-shelf-modal .item-picker-container {
+        gap: 10px;
+    }
+
+    .add-shelf-modal .item-picker-card {
+        gap: 5px;
+    }
+
+    .add-shelf-modal .item-picker-add-button {
+        height: 25px;
+    }
+
+    .add-shelf-modal .item-picker-add-button p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    /*Item picker styles*/
+    .add-shelf-modal .modal-content {
+        padding: 0 10px;
+        margin: 10px auto 0;
+    }
+
+    .create-shelf-button {
+        height: 35px;
+        padding: 0 15px;
+    }
+
+    .add-shelf-modal .item-picker-header h4 {
+        font-size: 16px;
+    }
+
+    .add-shelf-modal .item-picker-back-button {
+        font-size: 10px;
+    }
+
+    .add-shelf-modal .item-picker-search-input {
+        width: calc(100% - 42px);
+        height: 30px;
+        border-radius: 8px;
+        padding: 0 26px 0 12px;
+        font-size: 12px;
+    }
+
+    .add-shelf-modal .search-icon {
+        height: 14px;
+    }
+
+    .add-shelf-modal .item-picker-controls .dropdown {
+        min-width: 140px;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .add-shelf-modal .item-picker-controls .dropdown-closed {
+        border-radius: 8px;
+    }
+
+    .add-shelf-modal .item-picker-controls .dropdown-top {
+        height: 30px;
+        gap: 5px;
+    }
+
+    .add-shelf-modal .item-picker-controls .dropdown-top .up-arrow-icon {
+        width: 10px;
+    }
+
+    .add-shelf-modal .item-picker-controls .dropdown p {
+        font-size: 12px;
+    }
+
+    .add-shelf-modal .item-picker-controls .dropdown-option p {
+        font-size: 10px;
+    }
+
+    .add-shelf-modal .item-picker-controls .dropdown-option {
+        padding: 8px 7% 7px;
+    }
+
+    .add-shelf-modal .item-picker-controls .dropdown-bottom {
+        border-radius: 0 0 8px 8px;
+        top: 29px;
+    }
+
+    .add-shelf-modal .item-picker-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .add-shelf-modal .item-picker-card-img-wrapper {
+        height: 100px;
+    }
+
+    .add-shelf-modal .shelf-picker-outfit-img-wrapper {
+        height: 100px;
+    }
+
+    .add-shelf-modal .item-picker-card-name {
+        font-size: 10px;
+    }
+
+    .add-shelf-modal .item-picker-grid-swiper .swiper-scrollbar {
+        width: 8px !important;
+    }
+
+    .add-shelf-modal .item-picker-grid-swiper .swiper-slide {
+        padding: 0 15px 0px 0px;
+    }
+}

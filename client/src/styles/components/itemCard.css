@@ -1,0 +1,553 @@
+.item-card {
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    width: calc(25% - 11.25px);
+    aspect-ratio: 245 / 355;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 18px;
+    position: relative;
+    cursor: pointer;
+}
+
+.item-card-img-container {
+    width: 100%;
+    height: 66%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: flex;
+}
+
+.item-card-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+}
+
+.item-card-info-container .piece-type {
+    font-size: 12px;
+    color: #6E2F3A;
+}
+
+.item-card-info-container .piece-name {
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    /* limit to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-card-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+}
+
+.item-card-action-overlay {
+    display: none;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+}
+
+.item-card:hover .item-card-action-overlay {
+    display: flex;
+}
+
+.item-card-overlay .buy-button,
+.item-card-overlay .delete-button,
+.item-card-overlay .edit-button,
+.item-card-overlay .add-to-button {
+    padding: 10px 12px 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 8px;
+    height: 32px;
+}
+
+.item-card-overlay .buy-button {
+    background-color: #ECE4B7;
+}
+
+.item-card-overlay .delete-button {
+    background-color: #941414;
+}
+
+.item-card-overlay .edit-button {
+    background-color: #7FB069;
+}
+
+.item-card-overlay .add-to-button {
+    background-color: #E6AA68;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+    gap: 5px;
+    padding: 0;
+    cursor: unset;
+}
+
+.add-to-button-top {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 9px 12px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    height: 100%;
+}
+
+.add-to-icon-container {
+    height: 11px;
+    display: flex;
+    align-items: center;
+}
+
+.item-card-overlay .button p {
+    font-size: 14px;
+    line-height: 100%;
+}
+
+.item-card-overlay .delete-button p,
+.item-card-overlay .edit-button p,
+.item-card-overlay .add-to-button p {
+    display: none;
+}
+
+.item-card-action-overlay .delete-button:hover p,
+.item-card-action-overlay .edit-button:hover p,
+.item-card-action-overlay .add-to-button:hover p {
+    display: block;
+}
+
+.item-card-action-overlay .button:hover p {
+    display: block;
+}
+
+.item-card-overlay .delete-button p,
+.item-card-overlay .edit-button p,
+.item-card-overlay .add-to-button p {
+    color: #FFFFFF;
+}
+
+.item-card-overlay img {
+    height: 11px;
+    margin: 0 0 2px;
+}
+
+.item-card-overlay .add-opened-icon-white {
+    height: auto;
+    width: 11px;
+    display: none;
+}
+
+.add-to-options-container {
+    display: none;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding: 0 12px;
+    width: 100%;
+}
+
+.add-to-options-container .button {
+    background-color: transparent;
+    padding: 0;
+    width: 100%;
+    justify-content: end;
+}
+
+.add-to-options-container .button:hover .caption-copy {
+    font-weight: 700 !important;
+}
+
+.add-to-options-container p {
+    text-decoration: 1px solid underline #FFFFFF;
+}
+
+.add-to-button-opened {
+    height: auto !important;
+}
+
+.add-to-button-opened .add-to-button-top {
+    padding: 9px 12px 2px;
+    height: auto;
+}
+
+.add-to-button-opened .add-to-options-container {
+    display: flex;
+}
+
+.add-to-button-opened .add-icon-white {
+    display: none;
+}
+
+.add-to-button-opened .add-opened-icon-white {
+    display: flex;
+}
+
+/*Mode specific*/
+.item-card.outfits-mode .add-to-button {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px 8px;
+    cursor: pointer;
+}
+
+.item-card.outfits-mode .piece-name {
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+}
+
+.item-card.outfits-mode .item-card-img-container {
+    height: 74%;
+}
+
+/* Outfit mode container */
+.item-card-img-container.outfits-mode {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* 3-row stack inside the card */
+.outfit-img-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+}
+
+/* Each row */
+.outfit-img-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+}
+
+/* Individual piece images */
+.outfit-piece-img {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* If 2 images in a row (top+outerwear, bottom+footwear),
+   they should sit side-by-side */
+.outfit-row-upper .outfit-piece-img,
+.outfit-row-lower .outfit-piece-img {
+    flex: 1 1 0;
+}
+
+.item-card-img-container.outfits-mode.headwear-only .outfit-row-headwear {
+    flex: 1 1 100%;
+}
+
+.item-card-img-container.outfits-mode.headwear-only .outfit-row-upper,
+.item-card-img-container.outfits-mode.headwear-only .outfit-row-lower {
+    flex: 0 0 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.item-card-img-container.outfits-mode.headwear-plus-row-upper .outfit-row-headwear {
+    flex: 0.55 1 0;
+}
+
+.item-card-img-container.outfits-mode.headwear-plus-row-upper .outfit-row-upper {
+    flex: 0.45 1 0;
+}
+
+.item-card-img-container.outfits-mode.headwear-plus-row-upper .outfit-row-lower {
+    flex: 0 0 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.item-card-img-container.outfits-mode.headwear-plus-row-lower .outfit-row-headwear {
+    flex: 0.55 1 0;
+}
+
+.item-card-img-container.outfits-mode.headwear-plus-row-lower .outfit-row-lower {
+    flex: 0.45 1 0;
+}
+
+.item-card-img-container.outfits-mode.headwear-plus-row-lower .outfit-row-upper {
+    flex: 0 0 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.item-card-img-container.outfits-mode.row-upper-only .outfit-row-upper {
+    flex: 1 1 100%;
+}
+
+.item-card-img-container.outfits-mode.row-upper-only .outfit-row-headwear,
+.item-card-img-container.outfits-mode.row-upper-only .outfit-row-lower {
+    flex: 0 0 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.item-card-img-container.outfits-mode.row-lower-only .outfit-row-lower {
+    flex: 1 1 100%;
+}
+
+.item-card-img-container.outfits-mode.row-lower-only .outfit-row-headwear,
+.item-card-img-container.outfits-mode.row-lower-only .outfit-row-upper {
+    flex: 0 0 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.item-card-img-container.outfits-mode.no-headwear .outfit-row-upper {
+    flex: 0.5 1 0;
+}
+
+.item-card-img-container.outfits-mode.no-headwear .outfit-row-lower {
+    flex: 0.5 1 0;
+}
+
+.item-card-img-container.outfits-mode.no-headwear .outfit-row-headwear {
+    flex: 0 0 0;
+    height: 0;
+    overflow: hidden;
+}
+
+@media (max-width: 1230px) {
+    .item-card {
+        width: calc(33.3% - 9.8px);
+        aspect-ratio: 245 / 417;
+        max-height: 360px;
+    }
+}
+
+@media (max-width: 992px) {
+    .item-card {
+        width: calc(25% - 7.5px);
+        padding: 15px 12px 12px;
+        gap: 10px;
+        aspect-ratio: 245 / 521;
+        max-height: 353px;
+    }
+
+    .item-card-info-container .piece-name {
+        font-size: 18px;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+    }
+
+    .item-card-overlay {
+        position: unset;
+        align-items: start;
+    }
+
+    .item-card-overlay .buy-button {
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        padding: 5px 10px;
+        height: 30px;
+    }
+
+    .item-card-action-overlay {
+        display: flex !important;
+        flex-direction: row-reverse;
+    }
+
+    .item-card-action-overlay .button {
+        padding: 8px 10px;
+        height: 30px;
+    }
+
+    .item-card-action-overlay .button p {
+        display: none !important;
+    }
+
+    .item-card-action-overlay .add-to-button-top {
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .item-card {
+        width: calc(33.3% - 6.6px);
+        padding: 12px;
+        gap: 10px;
+        aspect-ratio: 245 / 411;
+    }
+
+    .item-card-info-container .piece-type {
+        font-size: 10px;
+    }
+
+    .item-card-info-container .piece-name {
+        font-size: 16px;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+    }
+
+    .item-card-overlay {
+        position: unset;
+        align-items: start;
+        margin: -5px 0 0;
+    }
+
+    .item-card-overlay .buy-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 5px 10px;
+        height: 30px;
+    }
+
+    .item-card-action-overlay {
+        display: flex !important;
+        flex-direction: row-reverse;
+    }
+
+    .item-card-overlay .button p {
+        font-size: 14px;
+    }
+
+    .item-card-overlay img {
+        height: 13px;
+    }
+
+    .item-card-action-overlay .button {
+        padding: 8px 10px;
+        height: 30px;
+    }
+
+    .item-card-action-overlay .add-to-button-top {
+        padding: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .item-card {
+        max-height: 317px;
+    }
+
+    .item-card-info-container .piece-type {
+        font-size: 8px;
+    }
+
+    .item-card-info-container .piece-name {
+        font-size: 14px;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+    }
+
+    .item-card-overlay {
+        position: unset;
+        align-items: start;
+        margin: -5px 0 0;
+    }
+
+    .item-card-overlay .buy-button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        padding: 5px 8px;
+        height: 24px;
+    }
+
+    .item-card-overlay .button p {
+        font-size: 11px;
+    }
+
+    .item-card-overlay img {
+        height: 9px;
+    }
+
+    .item-card-action-overlay .button {
+        padding: 8px 8px;
+        height: 24px;
+    }
+
+    .item-card-action-overlay .add-to-button-top {
+        padding: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .item-card {
+        width: calc(50% - 5px);
+        padding: 12px;
+        gap: 10px;
+        aspect-ratio: 245 / 411;
+        max-height: 280px;
+    }
+
+    .item-card-info-container .piece-type {
+        font-size: 8px;
+    }
+
+    .item-card-info-container .piece-name {
+        font-size: 14px;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+    }
+
+    .item-card-overlay {
+        position: unset;
+        align-items: start;
+        margin: -5px 0 0;
+    }
+
+    .item-card-overlay .buy-button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        padding: 5px 8px;
+        height: 24px;
+    }
+
+    .item-card-action-overlay {
+        display: flex !important;
+        flex-direction: row-reverse;
+    }
+
+    .item-card-overlay .button p {
+        font-size: 11px;
+    }
+
+    .item-card-overlay img {
+        height: 9px;
+    }
+
+    .item-card-action-overlay .button {
+        padding: 8px 8px;
+        height: 24px;
+    }
+
+    .item-card-action-overlay .add-to-button-top {
+        padding: 0;
+    }
+}

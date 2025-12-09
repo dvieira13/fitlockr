@@ -1,0 +1,299 @@
+[
+  {
+    "timestamp": "2025-12-07T21:46:36.570Z",
+    "level": "info",
+    "message": "✅ Google user data received",
+    "meta": {
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c"
+    }
+  },
+  {
+    "timestamp": "2025-12-07T21:46:36.719Z",
+    "level": "info",
+    "message": "🆕 User not found, creating new user..."
+  },
+  {
+    "timestamp": "2025-12-07T21:46:36.781Z",
+    "level": "info",
+    "message": "✅ New user created",
+    "meta": {
+      "_id": "692dfa4069c656d7f9ca866f",
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "username": "vieiradylan13",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c",
+      "auth_type": "google",
+      "pieces": [
+        "693304a71bc69ec75c073e04",
+        "693305221bc69ec75c073e0e",
+        "693305531bc69ec75c073e19",
+        "693305781bc69ec75c073e25",
+        "693305a51bc69ec75c073e32",
+        "6933061c1bc69ec75c073e40",
+        "6933068b1bc69ec75c073e4f"
+      ],
+      "outfits": [
+        "6933075a1bc69ec75c073e62",
+        "6933089e1bc69ec75c073e77",
+        "6933094fe2b8548075c6cafe",
+        "6933230f3eca7d1aef98192d",
+        "6933231a3eca7d1aef981945",
+        "6933238f3eca7d1aef98195e",
+        "693328b53eca7d1aef9819f4",
+        "693328cc3eca7d1aef981a0f",
+        "693329073eca7d1aef981a2b",
+        "69332fee3eca7d1aef981eb3",
+        "693335c63eca7d1aef98218a",
+        "6933371a3eca7d1aef9821f7"
+      ],
+      "shelves": [
+        "6934cc926b50659f503aa0a0"
+      ],
+      "is_deleted": "2025-12-02T04:09:19.616Z",
+      "all_items": [
+        {
+          "item_id": "693304a71bc69ec75c073e04",
+          "item_type": "Piece",
+          "_id": "693304a71bc69ec75c073e0b"
+        },
+        {
+          "item_id": "693305221bc69ec75c073e0e",
+          "item_type": "Piece",
+          "_id": "693305221bc69ec75c073e16"
+        },
+        {
+          "item_id": "693305531bc69ec75c073e19",
+          "item_type": "Piece",
+          "_id": "693305531bc69ec75c073e22"
+        },
+        {
+          "item_id": "693305781bc69ec75c073e25",
+          "item_type": "Piece",
+          "_id": "693305781bc69ec75c073e2f"
+        },
+        {
+          "item_id": "693305a51bc69ec75c073e32",
+          "item_type": "Piece",
+          "_id": "693305a61bc69ec75c073e3d"
+        },
+        {
+          "item_id": "6933061c1bc69ec75c073e40",
+          "item_type": "Piece",
+          "_id": "6933061c1bc69ec75c073e4c"
+        },
+        {
+          "item_id": "6933068b1bc69ec75c073e4f",
+          "item_type": "Piece",
+          "_id": "6933068b1bc69ec75c073e5c"
+        },
+        {
+          "item_id": "6933075a1bc69ec75c073e62",
+          "item_type": "Outfit",
+          "_id": "6933075a1bc69ec75c073e71"
+        },
+        {
+          "item_id": "6933089e1bc69ec75c073e77",
+          "item_type": "Outfit",
+          "_id": "6933089e1bc69ec75c073e87"
+        },
+        {
+          "item_id": "6933094fe2b8548075c6cafe",
+          "item_type": "Outfit",
+          "_id": "6933094fe2b8548075c6cb0f"
+        },
+        {
+          "item_id": "6933230f3eca7d1aef98192d",
+          "item_type": "Outfit",
+          "_id": "6933230f3eca7d1aef98193f"
+        },
+        {
+          "item_id": "6933231a3eca7d1aef981945",
+          "item_type": "Outfit",
+          "_id": "6933231a3eca7d1aef981958"
+        },
+        {
+          "item_id": "6933238f3eca7d1aef98195e",
+          "item_type": "Outfit",
+          "_id": "6933238f3eca7d1aef981972"
+        },
+        {
+          "item_id": "693328b53eca7d1aef9819f4",
+          "item_type": "Outfit",
+          "_id": "693328b63eca7d1aef981a09"
+        },
+        {
+          "item_id": "693328cc3eca7d1aef981a0f",
+          "item_type": "Outfit",
+          "_id": "693328cc3eca7d1aef981a25"
+        },
+        {
+          "item_id": "693329073eca7d1aef981a2b",
+          "item_type": "Outfit",
+          "_id": "693329073eca7d1aef981a42"
+        },
+        {
+          "item_id": "69332fee3eca7d1aef981eb3",
+          "item_type": "Outfit",
+          "_id": "69332fee3eca7d1aef981ecd"
+        },
+        {
+          "item_id": "693335c63eca7d1aef98218a",
+          "item_type": "Outfit",
+          "_id": "693335c63eca7d1aef9821a4"
+        },
+        {
+          "item_id": "6933371a3eca7d1aef9821f7",
+          "item_type": "Outfit",
+          "_id": "6933371a3eca7d1aef982213"
+        }
+      ],
+      "__v": 48
+    }
+  },
+  {
+    "timestamp": "2025-12-07T21:46:36.799Z",
+    "level": "info",
+    "message": "✅ User fully loaded into context",
+    "meta": {
+      "_id": "692dfa4069c656d7f9ca866f",
+      "first_name": "Dylan",
+      "last_name": "Vieira",
+      "name": "Dylan Vieira",
+      "username": "vieiradylan13",
+      "email": "vieiradylan13@gmail.com",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocLoDwKqnSC4Rm_HH9GZ996s7H2E2wxEPOQTZ76nOr7Cx5GyX9Ke=s96-c",
+      "auth_type": "google",
+      "pieces": [
+        "693304a71bc69ec75c073e04",
+        "693305221bc69ec75c073e0e",
+        "693305531bc69ec75c073e19",
+        "693305781bc69ec75c073e25",
+        "693305a51bc69ec75c073e32",
+        "6933061c1bc69ec75c073e40",
+        "6933068b1bc69ec75c073e4f"
+      ],
+      "outfits": [
+        "6933075a1bc69ec75c073e62",
+        "6933089e1bc69ec75c073e77",
+        "6933094fe2b8548075c6cafe",
+        "6933230f3eca7d1aef98192d",
+        "6933231a3eca7d1aef981945",
+        "6933238f3eca7d1aef98195e",
+        "693328b53eca7d1aef9819f4",
+        "693328cc3eca7d1aef981a0f",
+        "693329073eca7d1aef981a2b",
+        "69332fee3eca7d1aef981eb3",
+        "693335c63eca7d1aef98218a",
+        "6933371a3eca7d1aef9821f7"
+      ],
+      "shelves": [
+        "6934cc926b50659f503aa0a0"
+      ],
+      "is_deleted": "2025-12-02T04:09:19.616Z",
+      "all_items": [
+        {
+          "item_id": "693304a71bc69ec75c073e04",
+          "item_type": "Piece",
+          "_id": "693304a71bc69ec75c073e0b"
+        },
+        {
+          "item_id": "693305221bc69ec75c073e0e",
+          "item_type": "Piece",
+          "_id": "693305221bc69ec75c073e16"
+        },
+        {
+          "item_id": "693305531bc69ec75c073e19",
+          "item_type": "Piece",
+          "_id": "693305531bc69ec75c073e22"
+        },
+        {
+          "item_id": "693305781bc69ec75c073e25",
+          "item_type": "Piece",
+          "_id": "693305781bc69ec75c073e2f"
+        },
+        {
+          "item_id": "693305a51bc69ec75c073e32",
+          "item_type": "Piece",
+          "_id": "693305a61bc69ec75c073e3d"
+        },
+        {
+          "item_id": "6933061c1bc69ec75c073e40",
+          "item_type": "Piece",
+          "_id": "6933061c1bc69ec75c073e4c"
+        },
+        {
+          "item_id": "6933068b1bc69ec75c073e4f",
+          "item_type": "Piece",
+          "_id": "6933068b1bc69ec75c073e5c"
+        },
+        {
+          "item_id": "6933075a1bc69ec75c073e62",
+          "item_type": "Outfit",
+          "_id": "6933075a1bc69ec75c073e71"
+        },
+        {
+          "item_id": "6933089e1bc69ec75c073e77",
+          "item_type": "Outfit",
+          "_id": "6933089e1bc69ec75c073e87"
+        },
+        {
+          "item_id": "6933094fe2b8548075c6cafe",
+          "item_type": "Outfit",
+          "_id": "6933094fe2b8548075c6cb0f"
+        },
+        {
+          "item_id": "6933230f3eca7d1aef98192d",
+          "item_type": "Outfit",
+          "_id": "6933230f3eca7d1aef98193f"
+        },
+        {
+          "item_id": "6933231a3eca7d1aef981945",
+          "item_type": "Outfit",
+          "_id": "6933231a3eca7d1aef981958"
+        },
+        {
+          "item_id": "6933238f3eca7d1aef98195e",
+          "item_type": "Outfit",
+          "_id": "6933238f3eca7d1aef981972"
+        },
+        {
+          "item_id": "693328b53eca7d1aef9819f4",
+          "item_type": "Outfit",
+          "_id": "693328b63eca7d1aef981a09"
+        },
+        {
+          "item_id": "693328cc3eca7d1aef981a0f",
+          "item_type": "Outfit",
+          "_id": "693328cc3eca7d1aef981a25"
+        },
+        {
+          "item_id": "693329073eca7d1aef981a2b",
+          "item_type": "Outfit",
+          "_id": "693329073eca7d1aef981a42"
+        },
+        {
+          "item_id": "69332fee3eca7d1aef981eb3",
+          "item_type": "Outfit",
+          "_id": "69332fee3eca7d1aef981ecd"
+        },
+        {
+          "item_id": "693335c63eca7d1aef98218a",
+          "item_type": "Outfit",
+          "_id": "693335c63eca7d1aef9821a4"
+        },
+        {
+          "item_id": "6933371a3eca7d1aef9821f7",
+          "item_type": "Outfit",
+          "_id": "6933371a3eca7d1aef982213"
+        }
+      ],
+      "__v": 48
+    }
+  }
+]
