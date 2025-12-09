@@ -1,5 +1,5 @@
 # FitLockr
-- Virtual wardrobe app that allows users to add piece they own or want, and then create outfits from those pieces and organize their items into collections(shelves).
+- Virtual wardrobe app that allows users to add pieces they own or want, by taking a picture of a piece, uploading an image, or pasting a product page URL. Users can then create outfits from those pieces and organize their items into collections(shelves).
 
 Full-stack TypeScript project:
 - **Client**: React + Vite + TypeScript
