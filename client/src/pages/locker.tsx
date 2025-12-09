@@ -7,7 +7,7 @@ import "../styles/pages/lockerPage.css";
 import "../styles/pages/locker.css";
 
 import ListPageFilters from "../components/listPageFilters";
-import ItemCardCarousel from "../components/ItemCardCarousel";
+import ItemCardCarousel from "../components/itemCardCarousel";
 import ShelfCarousel from "../components/shelfCarousel";
 
 import AddPieceModal from "../components/modals/addPieceModal";
